@@ -4,19 +4,19 @@ import Home from './Home';
 import Features from './Features';
 import Demo from './Demo/Demo';
 import GetStarted from './GetStarted/GetStarted';
-import Team from './Team';
+import Team from './Team/Team';
 
 const Page = (): JSX.Element => {
   return (
     <div className='pageContainer'>
       <Navbar />
       <Home />
-      <Features /> */}
+      <Features />
       <div>
       <Demo />
       </div>
       <GetStarted />
-      {/* <Team /> */}
+      <Team />
     </div>
   );
 };

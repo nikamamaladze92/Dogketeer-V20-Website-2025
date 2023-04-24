@@ -5,9 +5,9 @@ import Page from "./components/Page";
 // import Navbar from './components/Navbar';
 import Home from "./components/Home";
 import Features from "./components/Features";
-import Demo from "./components/Demo";
-import GetStarted from "./components/GetStarted";
-import Team from "./components/Team";
+import Demo from "./components/Demo/Demo";
+import GetStarted from "./components/GetStarted/GetStarted";
+import Team from "./components/Team/Team";
 
 function App() {
   return (
