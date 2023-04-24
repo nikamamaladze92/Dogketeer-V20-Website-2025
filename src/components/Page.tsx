@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './Navbar';
 import Home from './Home';
 import Features from './Features';
-import Demo from './Demo';
-import GetStarted from './GetStarted';
+import Demo from './Demo/Demo';
+import GetStarted from './GetStarted/GetStarted';
 import Team from './Team';
 
 const Page = (): JSX.Element => {
