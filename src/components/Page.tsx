@@ -11,10 +11,12 @@ const Page = (): JSX.Element => {
     <div className='pageContainer'>
       <Navbar />
       <Home />
-      <Features />
+      <Features /> */}
+      <div>
       <Demo />
-      <GetStarted />
-      <Team />
+      </div>
+      {/* <GetStarted />
+      <Team /> */}
     </div>
   );
 };
