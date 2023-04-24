@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  margin: 0;
+  padding:0;
+  max-width: 100%;
+  
+}
+
+.pageContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    background-color: lightblue;
+    padding-left: 3em;
+    padding-right: 3em;
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    a {
+      text-decoration: none;
+    }
+  
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
+      
+      li {
+        padding: .5em;
+        list-style: none;
+        text-decoration: none;
+      }
+      
+    }
+  }
+}

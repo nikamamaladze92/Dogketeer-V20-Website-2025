@@ -1,6 +1,36 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-
-
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="navbarContainer">
+        <div className="left">
+          <h1>Docketeer</h1>
+          <img width="40px" height="40px" src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="none" />
+        </div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/features">Features</Link>
+          </li>
+          <li>
+            <Link to="/demo">Demo</Link>
+          </li>
+          <li>
+            <Link to="/getstarted">Get Started</Link>
+          </li>
+          <li>
+            <Link to="/team">Team</Link>
+          </li>
+          <li><Link to="http://google.com"><img src="../assets/github.png" alt="github_photo"/></Link></li>
+          <li><Link><img src="" alt="linkedin_photo"/></Link></li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
 
 export default Navbar;
