@@ -3,7 +3,7 @@ import React from 'react';
 // import Home from './Home';
 // import Features from './Features';
 import Demo from './Demo/Demo';
-// import GetStarted from './GetStarted';
+import GetStarted from './GetStarted/GetStarted';
 // import Team from './Team';
 
 const Page = (): JSX.Element => {
@@ -15,8 +15,8 @@ const Page = (): JSX.Element => {
       <div>
       <Demo />
       </div>
-      {/* <GetStarted />
-      <Team /> */}
+      <GetStarted />
+      {/* <Team /> */}
     </div>
   );
 };
