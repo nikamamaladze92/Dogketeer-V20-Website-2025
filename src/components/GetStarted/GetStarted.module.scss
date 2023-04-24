@@ -1,0 +1,22 @@
+.getStartedDisplay{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.githubButton {
+  background: rgb(50, 89, 131);
+  color: white;
+  width: 80px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 14px;
+  height: 14px;
+}
