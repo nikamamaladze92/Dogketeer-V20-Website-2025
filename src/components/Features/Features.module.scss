@@ -1,0 +1,51 @@
+.featuresContainer{
+
+  max-width: 76em;
+  margin: auto;
+  padding-top: 13em;
+  .features{ 
+    
+    .featureCards{
+      justify-content: center;
+      max-width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: auto;
+    }
+  }
+}
+
+.featureCard {
+  max-width: 170px;
+  max-height: auto;
+  padding: 1em;
+}
+
+.article{
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+  margin: 0 3px 20px 3px;
+  background: rgb(50, 89, 131);
+  color: white;
+  font-size: 15px;
+  display: block;
+  border-radius: 5px;
+  line-height: 40px;
+  margin: auto;
+}
+
+.article:hover{
+  background: lightblue;
+  a {
+    color: navy;
+  }
+}
+
+.article a {
+  color: white;
+  text-decoration: none;
+}
+
+

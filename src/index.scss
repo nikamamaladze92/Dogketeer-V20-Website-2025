@@ -26,6 +26,9 @@ body{
     background-color: lightblue;
     padding-left: 3em;
     padding-right: 3em;
+    position: fixed;
+    top: 0;
+    width: 100%;
     .left {
         display: flex;
         flex-direction: row;
@@ -62,7 +65,7 @@ body{
   max-width: 76em;
   
   margin: auto;
-  margin-top: 13em;
+  padding-top: 13em;
   
   .home {
     display: flex;
@@ -81,26 +84,26 @@ body{
   }
 }
 
-.featuresContainer{
+// .featuresContainer{
 
-  max-width: 76em;
-  margin: auto;
-  margin-top: 15em;
-  .features{ 
+//   max-width: 76em;
+//   margin: auto;
+//   margin-top: 15em;
+//   .features{ 
     
-    .featureCards{
-      justify-content: center;
-      max-width: 900px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      margin: auto;
-    }
-  }
-}
+//     .featureCards{
+//       justify-content: center;
+//       max-width: 900px;
+//       display: flex;
+//       flex-wrap: wrap;
+//       flex-direction: row;
+//       margin: auto;
+//     }
+//   }
+// }
 
-.featureCard {
-  max-width: 170px;
-  max-height: auto;
-  padding: 1em;
-}
+// .featureCard {
+//   max-width: 170px;
+//   max-height: auto;
+//   padding: 1em;
+// }
