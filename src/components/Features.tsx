@@ -1,5 +1,5 @@
-import React from 'react';
+// import React from 'react';
 
 
 
-export default Features;
+// export default Features;
