@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import github from "../assets/github.png"
+import linkedin from "../assets/linkedin.png"
 function Navbar() {
   return (
     <nav className="navbar">
@@ -25,8 +26,10 @@ function Navbar() {
           <li>
             <Link to="/team">Team</Link>
           </li>
-          <li><Link to="http://google.com"><img src="../assets/github.png" alt="github_photo"/></Link></li>
-          <li><Link><img src="" alt="linkedin_photo"/></Link></li>
+          <div className='icons'>
+            <li><Link to="https://github.com/orgs/oslabs-beta/teams/docketeer-xii"><img width="23px" height="23px" src={github} alt="github_photo"/></Link></li>
+            <li><Link to="http://google.com"><img width="30px" height="30px" src={linkedin} alt="linkedin_photo"/></Link></li>
+          </div>
         </ul>
       </div>
     </nav>

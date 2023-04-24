@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+h1,h4 {
+  font-family: 'Goblin One', serif;
+  color: black;
+  font-size: 20px;
+}
 body{
   margin: 0;
   padding: 0;
@@ -36,13 +43,64 @@ body{
     ul {
       display: flex;
       flex-direction: row;
-      
+      align-items:center;
       li {
         padding: .5em;
         list-style: none;
         text-decoration: none;
       }
-      
+      .icons{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+      }
     }
   }
+}
+
+.homeContainer {
+  max-width: 76em;
+  
+  margin: auto;
+  margin-top: 13em;
+  
+  .home {
+    display: flex;
+    flex-direction: row;
+    .left {
+      margin: auto;
+      .description {
+        max-width: 500px;
+      }
+    }
+    .right {
+      padding: 2em;
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+}
+
+.featuresContainer{
+
+  max-width: 76em;
+  margin: auto;
+  margin-top: 15em;
+  .features{ 
+    
+    .featureCards{
+      justify-content: center;
+      max-width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: auto;
+    }
+  }
+}
+
+.featureCard {
+  max-width: 170px;
+  max-height: auto;
+  padding: 1em;
 }
