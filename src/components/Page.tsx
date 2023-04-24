@@ -12,7 +12,9 @@ const Page = (): JSX.Element => {
       {/* <Navbar />
       <Home />
       <Features /> */}
+      <div>
       <Demo />
+      </div>
       {/* <GetStarted />
       <Team /> */}
     </div>
