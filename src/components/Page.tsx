@@ -4,7 +4,7 @@ import Home from './Home/Home';
 import Features from './Features/Features';
 import Demo from './Demo/Demo';
 import GetStarted from './GetStarted/GetStarted';
-import Team from './Team';
+import Team from './Team/Team';
 import {Link, Element} from 'react-scroll'
 
 const Page = (): JSX.Element => {

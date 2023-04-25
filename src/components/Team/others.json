@@ -1,0 +1,227 @@
+const people = [{
+    "name": "Michael Angelo Garcia",
+    "linkedin": "https://www.linkedin.com/in/michael-angelo-garcia-053848265/",
+    "Github": "https://github.com/MichaelAngelo13"
+},
+{
+    "name": "Benjamin Huang",
+    "linkedin": "https://www.linkedin.com/in/bh4120/",
+    "Github": "https://github.com/byhuang4100"
+},
+{
+    "name": "Mason Royal",
+    "linkedin": "https://www.linkedin.com/in/masonroyal/",
+    "Github": "https://github.com/masonroyal"
+},
+{
+    "name": "Saad Hamdani",
+    "linkedin": "https://www.linkedin.com/in/saadh123/",
+    "Github": "https://github.com/saadh123"
+},
+{
+    "name": "Garima Bhatia",
+    "linkedin": "https://www.linkedin.com/in/GarimaB06/",
+    "Github": "https://github.com/garimab06"
+},
+{
+    "name": "Nathan Cho",
+    "linkedin": "https://www.linkedin.com/in/nathanycho/",
+    "Github": "https://github.com/nathanycho"
+},
+{
+    "name": "Eshaan Joshi",
+    "linkedin": "https://www.linkedin.com/in/eshaanjoshi/",
+    "Github": "https://github.com/eshaan32"
+},
+{
+    "name": "Jonathan Wong",
+    "linkedin": "https://www.linkedin.com/in/jon-wong-00/",
+    "Github": "https://github.com/WongJonathann"
+},
+{
+    "name": "Drew Manley",
+    "linkedin": "https://www.linkedin.com/in/andrewmanley13/",
+    "Github": "https://github.com/DrewManley"
+},
+{
+    "name": "Tiffany Chau",
+    "linkedin": "https://www.linkedin.com/in/tiffanynchau/",
+    "Github": "https://github.com/tiffanynchau/"
+},
+{
+    "name": "Cedar Cooper",
+    "linkedin": "https://github.com/CedarCooper",
+    "Github": "https://www.linkedin.com/in/cedar-cooper/"
+},
+{
+    "name": "Sarah Moosa",
+    "linkedin": "https://www.linkedin.com/in/sarah-moosa-4b05721b6/",
+    "Github": "https://github.com/Sbethm?tab=repositories"
+},
+{
+    "name": "Jack Yuan",
+    "linkedin": "https://www.linkedin.com/in/jackyuan1/",
+    "Github": "https://github.com/jackyuan1"
+},
+{
+    "name": "Abigail Gerig",
+    "linkedin": "https://www.linkedin.com/in/abigail-gerig/",
+    "Github": "https://github.com/4estgirl"
+},
+{
+    "name": "Matt Dias",
+    "linkedin": "https://www.linkedin.com/in/matthew-j-dias/",
+    "Github": "https://github.com/Schmang13"
+},
+{
+    "name": "Trine Medina",
+    "linkedin": "https://www.linkedin.com/in/trinemedina/",
+    "Github": "https://github.com/TrineMedina"
+},
+{
+    "name": "Ruli Warner-Rosen",
+    "linkedin": "https://www.linkedin.com/in/ruliwr/",
+    "Github": "https://github.com/Ruliwr"
+},
+{
+    "name": "Christian Looff",
+    "linkedin": "https://www.linkedin.com/in/christian-looff/",
+    "Github": "https://github.com/cmlooff"
+},
+{
+    "name": "Christina Son",
+    "linkedin": "http://www.linkedin.com/in/christinason17",
+    "Github": "https://github.com/cson17"
+},
+{
+    "name": "Austin Andrews",
+    "linkedin": "http://www.linkedin.com/in/austinandrews17",
+    "Github": "https://github.com/austinandrews"
+},
+{
+    "name": "Fernando Luna",
+    "linkedin": "http://www.linkedin.com/in/fernando-luna",
+    "Github": "https://github.com/lunaf-github"
+},
+{
+    "name": "Eric Lay",
+    "linkedin": "http://www.linkedin.com/in/ericlay14",
+    "Github": "https://github.com/ericlay14"
+},
+{
+    "name": "Dylan Feldman",
+    "linkedin": "http://www.linkedin.com/in/dylan-feldman",
+    "Github": "https://github.com/dfeldman24"
+},
+{
+    "name": "Eric Lee",
+    "linkedin": "https://www.linkedin.com/in/errc-lee/",
+    "Github": "https://github.com/errc-lee"
+},
+{
+    "name": "Kenneth Hui",
+    "linkedin": "https://www.linkedin.com/in/kenneth-hui/",
+    "Github": "https://github.com/kennethhui121"
+},
+{
+    "name": "Kristine Aguda",
+    "linkedin": "https://www.linkedin.com/in/kristine-aguda/",
+    "Github": "https://github.com/kaguda"
+},
+{
+    "name": "Tre Hultzen",
+    "linkedin": "https://www.linkedin.com/in/tre-hultzen/",
+    "Github": "https://github.com/THultz"
+},
+{
+    "name": "Emma Czech",
+    "linkedin": "https://www.linkedin.com/in/emczech",
+    "Github": "https://github.com/emczech"
+},
+{
+    "name": "May Li",
+    "linkedin": "https://www.linkedin.com/in/maysli",
+    "Github": "https://github.com/msscloudy"
+},
+{
+    "name": "Ricardo Cortez",
+    "linkedin": "https://www.linkedin.com/in/rcortez88/",
+    "Github": "https://github.com/rcortez88"
+},
+{
+    "name": "Brent Speight",
+    "linkedin": "https://www.linkedin.com/in/brent-speight/",
+    "Github": "https://github.com/brentspeight"
+},
+{
+    "name": "Lorenzo Guevara",
+    "linkedin": "https://www.linkedin.com/in/lorenzoguevara/",
+    "Github": "https://github.com/lo-guevara"
+},
+{
+    "name": "Catherine Larcheveque",
+    "linkedin": "https://www.linkedin.com/in/clarcheveque/",
+    "Github": "https://github.com/clarcheveque"
+},
+{
+    "name": "Charles Ryu",
+    "linkedin": "https://www.linkedin.com/in/charcharryu/",
+    "Github": "https://github.com/charcharryu"
+},
+{
+    "name": "Griffin Silver",
+    "linkedin": "https://www.linkedin.com/in/griffin-silver-1ab675140/",
+    "Github": "https://github.com/griffinrogersilver"
+},
+{
+    "name": "Alex Smith",
+    "linkedin": "http://www.linkedin.com/in/ajsmith925",
+    "Github": "https://github.com/ajsmith925"
+},
+{
+    "name": "Anton Abdukhamidov",
+    "linkedin": "https://www.linkedin.com/in/anton-abdukhamidov-1163733b/",
+    "Github": "https://github.com/abdukhamidov-anton"
+},
+{
+    "name": "Chai Lee",
+    "linkedin": "https://www.linkedin.com/in/chai-lee-5a064649/",
+    "Github": "https://github.com/seachai"
+},
+{
+    "name": "Matt Jones",
+    "linkedin": "https://www.linkedin.com/in/mc-jones/",
+    "Github": "https://github.com/mc-jones"
+},
+{
+    "name": "Richie Edwards",
+    "linkedin": "https://www.linkedin.com/in/richieedwards/",
+    "Github": "https://github.com/richie-edwards"
+},
+{
+    "name": "Mitesh Patel",
+    "linkedin": "https://www.linkedin.com/in/mitesh-patel-8702728b/",
+    "Github": "https://github.com/mit1812"
+},
+{
+    "name": "Minchan Jun",
+    "linkedin": "https://www.linkedin.com/in/minchan-jun/",
+    "Github": "https://github.com/MinchanJun"
+},
+{
+    "name": "Kadir Gundogdu",
+    "linkedin": "https://www.linkedin.com/in/kadirgund/",
+    "Github": "https://github.com/kadirgund"
+},
+{
+    "name": "Dan Lin",
+    "linkedin": "https://www.linkedin.com/in/danlin91/",
+    "Github": "https://github.com/DanLin91"
+},
+{
+    "name": "Wilmer Sinchi",
+    "linkedin": "https://www.linkedin.com/in/wilmer-sinchi-143b7681/",
+    "Github": "https://github.com/sinchiw"
+}]
+
+export default people;
