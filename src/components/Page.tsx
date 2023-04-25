@@ -5,7 +5,7 @@ import Features from './Features/Features';
 import Demo from './Demo/Demo';
 import GetStarted from './GetStarted/GetStarted';
 import Team from './Team/Team';
-import {Link, Element} from 'react-scroll'
+import { Link, Element } from 'react-scroll'
 
 const Page = (): JSX.Element => {
   return (
@@ -25,8 +25,9 @@ const Page = (): JSX.Element => {
       <Element name="getstarted">
         <GetStarted />
       </Element>
-      
-      {/* <Team /> */}
+      <Element name="team">
+        <Team />
+      </Element>
     </div>
   );
 };
