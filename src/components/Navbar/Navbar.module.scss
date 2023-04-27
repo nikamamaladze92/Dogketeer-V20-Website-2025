@@ -1,11 +1,44 @@
 h1 {
-  font-size: 1.9em;
+  font-size: 30px;
 }
 li {
-  font-size: 14px;
+  font-size: 20px;
 }
 
-.navbarContainer {
+li:hover {
+  color: rgba(154, 180, 251);
+  animation: updown 1s ease-in-out infinite;
+  animation-play-state: running;
+}
+
+li:not(:hover) {
+  animation: updown-out .5s ease-out forwards;
+  animation-play-state: running;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes updown-out {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,9 +52,11 @@ li {
     text-decoration: none;
   }
 
-  .navbar {
+  .navbarContainer {
+    // margin:auto;
+    // max-width: 1500px;
     display: flex;
-    // flex-direction: row;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     ul {

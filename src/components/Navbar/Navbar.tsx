@@ -5,8 +5,8 @@ import styles from './Navbar.module.scss';
 
 function Navbar() {
   return (
-    <nav className={styles.navbarContainer}>
-      <div className={styles.navbar}>
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContainer}>
         <div className={styles.left}>
           <h1>Docketeer</h1>
           <img
