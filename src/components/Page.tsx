@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
 import Features from './Features/Features';
@@ -6,14 +6,15 @@ import Demo from './Demo/Demo';
 import GetStarted from './GetStarted/GetStarted';
 import Team from './Team/Team';
 import { Link, Element } from 'react-scroll';
-
+import  {useInView} from 'react-intersection-observer'
 
 const Page = (): JSX.Element => {
+  const {ref: myRef, inView: visible} = useInView()
   return (
     <div className='pageContainer'>
       <Navbar />
       <Element name="home">
-        <Home />
+        <Home/>
       </Element>
       <Element name='features'>
         <Features />

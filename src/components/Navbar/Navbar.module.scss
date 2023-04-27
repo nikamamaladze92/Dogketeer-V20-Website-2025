@@ -1,9 +1,27 @@
 h1 {
-  font-size: 1.9em;
+  font-size: 30px;
 }
 li {
-  font-size: 1.3em;
+  font-size: 20px;
 }
+
+li:hover {
+  animation: updown 1s ease-in-out infinite;
+  animation-play-state: running;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -18,26 +36,26 @@ li {
     text-decoration: none;
   }
 
-.navbarContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  ul {
+  .navbarContainer {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    li {
-      padding: .5em;
-      list-style: none;
-      text-decoration: none;
-    }
-    .icons{
-      display:flex;
-      flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
       align-items: center;
-      padding-right: 3em;
+      li {
+        padding: 0.5em;
+        list-style: none;
+        text-decoration: none;
+      }
+      .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 3em;
+      }
     }
   }
-}
 }
