@@ -6,7 +6,7 @@ import githubLogo from '../../assets/github-mark/github-mark-white.png';
 const GetStarted = (): JSX.Element => {
   return (
     <div className={styles.getStartedDisplay}>
-      <h2>Get Started</h2>
+      <h1>Get Started</h1>
       <p>
         Getting started with Docketeer is easy!<br />
         Navigate to our GitHub page and follow our detailed instructions under "Installation"
