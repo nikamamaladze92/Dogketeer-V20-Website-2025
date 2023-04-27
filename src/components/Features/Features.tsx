@@ -1,28 +1,34 @@
-import React from 'react'
-import FeatureCard from './FeatureCard'
-import styles from './Features.module.scss'
-import {Link} from 'react-router-dom';
+import React from 'react';
+import FeatureCard from './FeatureCard';
+import styles from './Features.module.scss';
+import containers from '../../assets/features/containers.svg';
+import images from '../../assets/features/images.svg';
+import kubernetes from '../../assets/features/kubernetes.svg';
+import logs from '../../assets/features/logs.svg';
+import metrics from '../../assets/features/metrics.svg';
+import cookie from '../../assets/features/cookie.svg';
+import security from '../../assets/features/security.svg';
+import prune from '../../assets/features/prune.svg';
+
 function Features() {
   return (
     <div className={styles.featuresContainer}>
       <div className={styles.features}>
-        <h2>Features</h2>
-        <h4>Read More about Docketeerxii</h4>
-        <div className={styles.article}> <a href="http://google.com">link to medium article</a> </div>
+        <h1>Features</h1>
+        <a className={styles.article} href="http://google.com">Read about us on Medium!</a>
         <div className={styles.featureCards}>
-          <FeatureCard header={"Feature1"} img={""} info={"lorem alsjf askdf asdjkf lajsdfk klsdj"} />
-          <FeatureCard header={"Feature2"} img={""} info={"lorem lasjdf alsdjfwie akdjlj wlkjkewr "} />
-          <FeatureCard header={"Feature3"} img={""} info={"lorem ipsum dfjgjs dfio pgjs dfio pgjiops dfgjios dfm mm mm mm mmm mm"} />
-          <FeatureCard header={"Feature4"} img={""} info={"lorem ipsumj sdfuio gjiopsd fgji opsd fgjiop sdfgj iop sdf mmmm mmm mmm mm"} />
-          <FeatureCard header={"Feature4"} img={""} info={"lorem ipsumj sdfuio gjiopsd fgji opsd fgjiop sdfgj iop sdf mmmm mmm mmm mm"} />
-          <FeatureCard header={"Feature4"} img={""} info={"lorem ipsumj sdfuio gjiopsd fgji opsd fgjiop sdfgj iop sdf mmmm mmm mmm mm"} />
-          <FeatureCard header={"Feature4"} img={""} info={"lorem ipsumj sdfuio gjiopsd fgji opsd fgjiop sdfgj iop sdf mmmm mmm mmm mm"} />
-          <FeatureCard header={"Feature4"} img={""} info={"lorem ipsumj sdfuio gjiopsd fgji opsd fgjiop sdfgj iop sdf mmmm mmm mmm mm"} />
+          <FeatureCard header={"Container Management"} img={containers} info={"Create, start, stop, and delete Docker containers all in one place"} />
+          <FeatureCard header={"Image Management"} img={images} info={"Easily view, run, remove, and search for Docker images"} />
+          <FeatureCard header={"Container Metrics"} img={metrics} info={"Access metrics related to containers in a dashboard with rich visualizations"} />
+          <FeatureCard header={"Cluster Metrics"} img={kubernetes} info={"Access metrics related to Kubernetes clusters with just the toggle of a button"} />
+          <FeatureCard header={"Detailed Process Logs"} img={logs} info={"View and download process logs related to containers"} />
+          <FeatureCard header={"Secure Authentication"} img={security} info={"Maintain trust in Docketeer's encryption and hashing methods"} />
+          <FeatureCard header={"Sessions"} img={cookie} info={"Stay logged in thanks to Docketeer's implementation of sessions and cookies"} />
+          <FeatureCard header={"System Prune"} img={prune} info={"Clear up unused images to ensure optimized performance"} />
         </div>
-        
       </div>
     </div>
-  )
+  );
 }
 
-export default Features
+export default Features;
