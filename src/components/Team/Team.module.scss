@@ -2,10 +2,10 @@
   height: 40vh;
   padding: 0 20px 0 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .osp4Container {
