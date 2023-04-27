@@ -1,10 +1,9 @@
-.featuresContainer{
+.featuresContainer {
   max-width: 76em;
   margin: auto;
-  padding-top: 13em;
-  .features{ 
-    
-    .featureCards{
+  padding-top: 30vh;
+  .features {
+    .featureCards {
       justify-content: center;
       max-width: 900px;
       display: flex;
@@ -21,7 +20,7 @@
   padding: 1em;
 }
 
-.article{
+.article {
   cursor: pointer;
   width: 160px;
   height: 40px;
@@ -35,7 +34,7 @@
   margin: auto;
 }
 
-.article:hover{
+.article:hover {
   background: lightblue;
   a {
     color: navy;
@@ -46,5 +45,3 @@
   color: white;
   text-decoration: none;
 }
-
-

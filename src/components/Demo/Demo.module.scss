@@ -1,10 +1,10 @@
-.demoDisplay{
+.demoDisplay {
   max-width: 84em;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 13em;
+  padding-top: 30vh;
 }
 
 .mainContainer {
@@ -37,7 +37,7 @@
   line-height: 40px;
 }
 
-.toggle:hover{
+.toggle:hover {
   background: lightblue;
   color: navy;
 }
@@ -46,7 +46,26 @@
   width: 50%;
 }
 
-.gifs{
+.gifs {
   width: 100%;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .demoDisplay {
+    flex-direction: column;
+    margin: auto;
+  }
+  .toggleContainer {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .gifContainer {
+    width: 100%;
+    height: auto;
+  }
+  .mainContainer {
+    width: fit-content;
+  }
 }

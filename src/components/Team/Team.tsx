@@ -7,31 +7,32 @@ import osp4 from './osp4';
 
 const Team = () => {
   return (
-    <div>
+    <div className={styles.teamContainer}>
+      <h2>The Team Behind Docketeer XII</h2>
       <div className={styles.osp4Container}>
-      {osp4.map((person, index) => (
-      <XII
-      key = {index}
-      img = {person.img}
-      name = {person.name}
-      linkedin = {person.linkedin}
-      github = {person.github}
-      />
-      ))}
+        {osp4.map((person, index) => (
+          <XII
+            key={index}
+            img={person.img}
+            name={person.name}
+            linkedin={person.linkedin}
+            github={person.github}
+          />
+        ))}
       </div>
       <h3>Meet All Our Engineers</h3>
       <div className={styles.othersContainer}>
-      {people.map((person, index) => (
-      <AllOthers
-      key = {index}
-      name = {person.name}
-      linkedin = {person.linkedin}
-      github = {person.github}
-      />
-      ))}
+        {people.map((person, index) => (
+          <AllOthers
+            key={index}
+            name={person.name}
+            linkedin={person.linkedin}
+            github={person.github}
+          />
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Team;

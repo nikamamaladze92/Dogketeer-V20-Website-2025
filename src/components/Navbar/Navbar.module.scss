@@ -2,9 +2,10 @@ h1 {
   font-size: 1.9em;
 }
 li {
-  font-size: 1.3em;
+  font-size: 14px;
 }
-.navbar {
+
+.navbarContainer {
   position: fixed;
   top: 0;
   width: 100%;
@@ -18,26 +19,42 @@ li {
     text-decoration: none;
   }
 
-.navbarContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  ul {
+  .navbar {
     display: flex;
-    flex-direction: row;
-    align-items:center;
-    li {
-      padding: .5em;
-      list-style: none;
-      text-decoration: none;
-    }
-    .icons{
-      display:flex;
-      flex-direction:row;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
       align-items: center;
-      padding-right: 3em;
+      li {
+        padding: 0.5em;
+        list-style: none;
+        text-decoration: none;
+      }
+      .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 3em;
+      }
     }
   }
 }
+
+@media screen and (max-width: 650px) and (orientation: portrait) {
+  .navbar {
+    flex-direction: column;
+    margin: 0;
+  }
+  .navbarContainer > .left {
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+  }
+  h1 {
+    margin-top: 3vh;
+  }
 }
