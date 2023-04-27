@@ -1,22 +1,17 @@
 .featuresContainer {
-  max-width: 70vw;
+  max-width: 76em;
   margin: auto;
   padding-top: 13em;
 
   .features {
 
     .featureCards {
-      
-      margin:auto;
-      max-width: 60vw;
+      max-width: 1200px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
       margin-top: 20px;
-    }
-    .featureCard {
-      margin: 40px;
     }
   }
 }
