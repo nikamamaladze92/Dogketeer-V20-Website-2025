@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import docketeer from '../../assets/docketeer.png';
+import docker from "../../assets/dockerlogo.png"
+import kuber from "../../assets/kuberneteslogo.png"
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from 'react-spring';
 
@@ -24,7 +26,7 @@ function Home(): JSX.Element {
             </div>
           </div>
           <div className={styles.right}>
-            <img width='300px' height='auto' src={docketeer} alt="docketeer_img" />
+            <img width='300px' height='auto' src={docker} alt="docketeer_img" />
           </div>
         </div>
       </div>

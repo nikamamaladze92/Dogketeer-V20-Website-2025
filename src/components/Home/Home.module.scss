@@ -1,13 +1,12 @@
 .homeContainer {
-  max-width: 76em;
-
+  max-width: 80vw;
+  border-radius: 5px;
   margin: auto;
   margin-top: 13em;
 
   .home {
     display: flex;
     flex-direction: row;
-
     .left {
       margin: auto;
 

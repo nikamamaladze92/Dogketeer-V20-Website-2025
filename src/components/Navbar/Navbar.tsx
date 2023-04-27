@@ -8,8 +8,8 @@ function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
-          <h1>Docketeer</h1>
-          <img width="40px" height="40px" src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="none" />
+          <img width="40px" height="40px" src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="none" /><h1>Docketeer</h1>
+          
         </div>
         <ul>
           <li>

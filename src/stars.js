@@ -23,7 +23,7 @@ function init() {
 function addSphere() {
 
   // The loop will move from z position of -1000 to z position 1000, adding a random particle at each position. 
-  for (let z = -4000; z < 4000; z += 40) {
+  for (let z = -2000; z < 2000; z += 40) {
 
     // Make a sphere (exactly the same as before). 
     let geometry = new THREE.SphereGeometry(0.4, 32, 32)
