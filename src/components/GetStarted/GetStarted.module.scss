@@ -1,22 +1,28 @@
 .getStartedDisplay {
-  height: 10vh;
+  height: 80vh;
+  margin: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30vh;
 }
 
 .githubButton {
-  background: rgb(50, 89, 131);
+  background: rgb(37, 32, 116);
   color: white;
-  width: 80px;
+  width: 90px;
   height: 20px;
   padding: 10px;
   border-radius: 5px;
+  line-height: 20px;
 }
 
 .logo {
   width: 14px;
   height: 14px;
+}
+
+.githubButton:hover {
+  cursor: pointer;
+  background: rgba(154, 180, 251);
 }

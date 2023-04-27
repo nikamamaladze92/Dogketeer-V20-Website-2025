@@ -1,5 +1,7 @@
 import React from 'react';
-import styles from './Features.module.scss'
+import styles from './Features.module.scss';
+
+
 interface FeatureCardProps {
   header: string,
   img: string,
@@ -9,11 +11,11 @@ interface FeatureCardProps {
 function FeatureCard(props: FeatureCardProps) {
   return (
     <div className={styles.featureCard}>
-      <h5>{props.header}</h5>
+      <h3>{props.header}</h3>
       <img src={props.img} alt="img" />
       <p>{props.info}</p>
     </div>
-  )
+  );
 }
 
-export default FeatureCard
+export default FeatureCard;
