@@ -6,25 +6,24 @@
   align-items: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  text-align: center;
 }
 
 .osp4Container {
+  margin: auto;
+  max-width: 86em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .person {
   font-size: 20px;
   margin: 10px;
-}
-
-.linkedIn {
-  width: 18px;
-  height: 18px;
 }
 
 .github {

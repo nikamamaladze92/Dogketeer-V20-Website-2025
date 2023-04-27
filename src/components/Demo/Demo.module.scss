@@ -1,10 +1,11 @@
 .demoDisplay{
+  max-width: 84em;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 13em;
 }
-
 
 .mainContainer {
   width: 50%;
@@ -13,16 +14,14 @@
   justify-content: center;
   align-items: center;
 }
-.demoContainer {
-  max-width: 84em;
-  margin: auto;
-}
+
 .toggleContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .toggle {
@@ -51,44 +50,3 @@
   width: 100%;
   border-radius: 10px;
 }
-
-// .-container-1 {
-//     position: relative;
-//     width: 100px;
-//     height: 50px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-top: 6vh;
-//     overflow: hidden;
-//     border: 1px solid;
-//     font-family: "Lato", sans-serif;
-//     font-weight: 300;
-//     font-size: 20px;
-//     transition: 0.5s;
-//     letter-spacing: 1px;
-//     border-radius: 8px;
-//   }
-// .toggle {
-//   width: 101%;
-//   height: 100%;
-//   font-family: "Lato", sans-serif;
-//   font-weight: 300;
-//   font-size: 11px;
-//   letter-spacing: 1px;
-//   font-weight: bold;
-//   background: #000;
-//   -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-//   mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-//   -webkit-mask-size: 2300% 100%;
-//   mask-size: 2300% 100%;
-//   border: none;
-//   color: #fff;
-//   cursor: pointer;
-//   -webkit-animation: ani2 0.7s steps(22) forwards;
-//   animation: ani2 0.7s steps(22) forwards;
-// }
-
-// .toggle:hover {
-//   -webkit-animation: ani 0.7s steps(22) forwards;
-//   animation: ani 0.7s steps(22) forwards;
-// }
