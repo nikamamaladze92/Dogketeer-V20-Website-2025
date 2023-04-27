@@ -1,10 +1,18 @@
-.demoDisplay{
+.demoDisplayLoaded {
   max-width: 84em;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 13em;
+  transform: scale(0);
+  animation: zoom-in 2s forwards;
+}
+
+.demoDisplay {
+  opacity: 0;
+  width: 20%;
+  transition: opacity 0.5s ease-out;
 }
 
 .mainContainer {
@@ -29,7 +37,8 @@
   width: 160px;
   height: 40px;
   margin: 0 3px 20px 3px;
-  background: rgb(50, 89, 131);
+  background: transparent;
+  box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
   color: white;
   font-size: 15px;
   display: block;
@@ -37,7 +46,7 @@
   line-height: 40px;
 }
 
-.toggle:hover{
+.toggle:hover {
   background: lightblue;
   color: navy;
 }
@@ -46,7 +55,44 @@
   width: 50%;
 }
 
-.gifs{
+.gifs {
   width: 100%;
   border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
+}
+
+@media screen and (min-width: 1275px) {
+  .gifContainer {
+    width: 640px; /* set the width to 50% when screen width is 768px or less */
+    height: auto; /* set the height to auto */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .demoDisplayLoaded {
+    max-width: 84em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 13em;
+    transform: scale(0);
+    animation: zoom-in 2s forwards; /* set the width to 50% when screen width is 768px or less */
+    height: auto; /* set the height to auto */
+  }
+  .gifContainer {
+    width: 640px; /* set the width to 50% when screen width is 768px or less */
+    height: auto; /* set the height to auto */
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
