@@ -8,10 +8,13 @@ const Demo = (): JSX.Element => {
   const [currentGif, setCurrentGif] = useState(0);
 
   return (
-    <div className={styles.demoDisplay}>
+    <div className={styles.demoContainer}>
+      <div className={styles.demoDisplay}>
       <DemoToggle setCurrentGif={setCurrentGif} />
       <DemoImage currentGif={currentGif} />
     </div>
+    </div>
+    
   );
 };
 
