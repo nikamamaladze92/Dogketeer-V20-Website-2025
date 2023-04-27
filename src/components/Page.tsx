@@ -9,12 +9,12 @@ import { Link, Element } from 'react-scroll';
 
 const Page = (): JSX.Element => {
   return (
-    <div className='pageContainer'>
+    <div className="pageContainer">
       <Navbar />
       <Element name='home'>
         <Home />
       </Element>
-      <Element name='features'>
+      <Element name="features">
         <Features />
       </Element>
       <Element name='demo'>
