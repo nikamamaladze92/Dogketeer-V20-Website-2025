@@ -20,7 +20,7 @@ function Features() {
         <a className={styles.article} href="http://google.com" target="_blank">Read about us on Medium!</a>
         <div className={styles.featureCards}>
         
-          <FeatureCard header={"Container Management"} img={containers} info={"Create, start, stop, and delete Docker containers all in one place"} />
+          <FeatureCard header={"Container Management"} img={containers} info={"Easily start, stop, and remove Docker containers"} />
           <FeatureCard header={"Image Management"} img={images} info={"Easily view, run, remove, and search for Docker images"} />
           <FeatureCard header={"Container Metrics"} img={metrics} info={"Access metrics related to containers in a dashboard with rich visualizations"} />
           <FeatureCard header={"Cluster Metrics"} img={kubernetes} info={"Access metrics related to Kubernetes clusters with just the toggle of a button"} />

@@ -45,7 +45,7 @@ const Demo = (): JSX.Element => {
       ref={demoRef}>
       <h1 className={styles.title}>See Docketeer in Action</h1>
       <div className={styles.demoContainer}>
-        <DemoToggle setCurrentGif={setCurrentGif} />
+        <DemoToggle setCurrentGif={setCurrentGif} currentGif={currentGif} />
         <DemoImage currentGif={currentGif} />
       </div>
     </div>
