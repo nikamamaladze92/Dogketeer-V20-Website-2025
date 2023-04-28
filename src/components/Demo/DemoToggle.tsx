@@ -12,7 +12,7 @@ const DemoToggle: React.FC<DemoToggleProps> = ({ setCurrentGif }): JSX.Element =
   }
   return (
     <div className={styles.mainContainer}>
-      <p>Click to see Docketeer in action!</p>
+      <p className={styles.action}>Click to see a demo of each feature!</p>
       <div className={styles.toggleContainer}>
         <div className={styles.toggle} onClick={() => handleClick(0)} >Containers</div>
         <div className={styles.toggle} onClick={() => handleClick(1)}>Images</div>
