@@ -1,7 +1,12 @@
 .featuresContainer {
+  transition: opacity 0.5s ease-out;
   max-width: 76em;
   margin: auto;
   padding-top: 13em;
+
+  .visible {
+    opacity: 1;
+  }
 
   .features {
 
