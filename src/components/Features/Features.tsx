@@ -11,41 +11,8 @@ import security from '../../assets/features/security.svg';
 import prune from '../../assets/features/prune.svg';
 
 function Features() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isIntersecting, setIsIntersecting] = useState(false);
-  const featureRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsLoaded(true);
-          setIsIntersecting(true);
-          observer.unobserve(entry.target);
-        } else {
-          setIsIntersecting(false);
-        }
-      },
-      { threshold: 0.4 }
-    );
-
-    const currentRef = featureRef.current;
-
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
-  }, []);
   return (
-    <div
-      className={isLoaded ? styles.featuresContainer : styles.featuresNo}
-      ref={featureRef}
-    >
+    <div className={styles.featuresContainer}>
       <div className={styles.features}>
         <h1>Features</h1>
         <a className={styles.article} href="http://google.com" target="_blank">

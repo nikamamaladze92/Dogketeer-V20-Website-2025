@@ -22,7 +22,7 @@
   margin-bottom: 5vh;
   padding-top: 10vh;
   height: 100vh;
-  animation: zoom-in 0.5s forwards;
+
   .features {
     .featureCards {
       max-width: 1200px;
@@ -33,9 +33,6 @@
       margin-top: 20px;
     }
   }
-}
-.featuresNo {
-  opacity: 0;
 }
 
 .featureCard {
@@ -66,15 +63,4 @@ h4 {
 }
 .article:not(:hover) {
   transition: 0.3s;
-}
-
-@keyframes zoom-in {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
