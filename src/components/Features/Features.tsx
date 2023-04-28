@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import FeatureCard from './FeatureCard';
 import styles from './Features.module.scss';
 import containers from '../../assets/features/containers.svg';

@@ -12,8 +12,11 @@ function Navbar() {
     const links = document.querySelectorAll('li')
     for(let i = 0; i < links.length; i++){
       const link = links[i] as HTMLElement;
-      link.style.color = 'blue';
-      // link[i].style.visibility = 'visible';
+      // link.style.color = 'blue';
+      if(link.style.visibility === 'visible'){
+        link.style.visibility = 'hidden'
+      }else
+      link.style.visibility = 'visible';
     }
   }
   return (
