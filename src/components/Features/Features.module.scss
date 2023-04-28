@@ -22,7 +22,7 @@
   margin-bottom: 5vh;
   padding-top: 10vh;
   height: 100vh;
-
+  animation: zoom-in 0.5s forwards;
   .features {
     .featureCards {
       max-width: 1200px;
@@ -33,6 +33,9 @@
       margin-top: 20px;
     }
   }
+}
+.featuresNo {
+  opacity: 0;
 }
 
 .featureCard {
@@ -58,68 +61,20 @@ h4 {
 }
 
 .article:hover {
-<<<<<<< HEAD
-  color: rgb(26, 28, 130);
+  color: #fffd96;
+  transition: 0.3s;
+}
+.article:not(:hover) {
+  transition: 0.3s;
 }
 
-@keyframes fadeInFromRight {
+@keyframes zoom-in {
   0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: scale(1);
   }
 }
-
-.fade-in {
-  opacity: 0;
-}
-
-.fade-in.visible {
-  animation-name: fadeInFromRight;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-=======
-  color: #fffd96;
-  transition: .3s;
-}
-.article:not(:hover) {
-  transition: .3s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animated {
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-
-.delay-1 {
-  animation-delay: 0.25s;
-}
-
-.delay-2 {
-  animation-delay: 0.5s;
-}
-
-.delay-3 {
-  animation-delay: 0.75s;
-}
-
-.delay-4 {
-  animation-delay: 1s;
-}
->>>>>>> 03201b5ea5b2943c81e8d4131026f09eab5b0785
