@@ -1,11 +1,15 @@
 .teamContainer {
+  padding-bottom: 100px;
+  padding-top: 10vh;
+
   h2 {
-    padding-top: 30vh;
+    padding-bottom: 5vh;
   }
 
   h3 {
-    padding-top: 15vh;
+    padding-top: 5vh;
   }
+
   .othersContainer {
     height: 40vh;
     margin-top: 5vh;
@@ -25,7 +29,6 @@
 
     .home {
       display: flex;
-      // flex-direction: row;
 
       .left {
         margin: auto;
@@ -40,6 +43,7 @@
         max-width: 500px;
         margin: auto;
       }
+
       h3 {
         margin-top: 0;
       }
@@ -60,8 +64,19 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 5vh;
     text-align: center;
+
+    .github {
+      width: 19px;
+      height: 19px;
+      margin-left: 5px;
+    }
+  }
+
+  .osp4box {
+    padding-bottom: 2vh;
+    box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
   }
 
   .person {
@@ -69,14 +84,23 @@
     margin: 10px;
   }
 
-  .github,
-  .linkedin {
-    width: 15px;
-    height: 15px;
-    margin-left: 4px;
+  .github {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
   }
 
   .osp4Pic {
     width: 200px;
+  }
+
+  .github:hover {
+    cursor: pointer;
+    
+  }
+
+  svg:hover {
+    cursor: pointer;
+    
   }
 }

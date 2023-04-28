@@ -1,7 +1,27 @@
+.featureCard:hover {
+  animation: updown 1s ease-in-out infinite;
+  animation-play-state: running;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .featuresContainer {
+  transition: opacity 0.5s ease-out;
   max-width: 76em;
   margin: auto;
-  padding-top: 13em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-top: 10vh;
+  height: 100vh;
 
   .features {
     .featureCards {
@@ -38,6 +58,7 @@ h4 {
 }
 
 .article:hover {
+<<<<<<< HEAD
   color: rgb(26, 28, 130);
 }
 
@@ -61,3 +82,44 @@ h4 {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+=======
+  color: #fffd96;
+  transition: .3s;
+}
+.article:not(:hover) {
+  transition: .3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.delay-1 {
+  animation-delay: 0.25s;
+}
+
+.delay-2 {
+  animation-delay: 0.5s;
+}
+
+.delay-3 {
+  animation-delay: 0.75s;
+}
+
+.delay-4 {
+  animation-delay: 1s;
+}
+>>>>>>> 03201b5ea5b2943c81e8d4131026f09eab5b0785

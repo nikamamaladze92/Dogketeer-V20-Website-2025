@@ -2,17 +2,18 @@ h1 {
   font-size: 30px;
 }
 li {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 li:hover {
+  cursor: pointer;
   color: rgba(154, 180, 251);
   animation: updown 1s ease-in-out infinite;
   animation-play-state: running;
 }
 
 li:not(:hover) {
-  animation: updown-out .5s ease-out forwards;
+  animation: updown-out 1s ease-out forwards;
   animation-play-state: running;
 }
 
@@ -42,6 +43,7 @@ li:not(:hover) {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index:1;
   .left {
     padding-left: 3em;
     display: flex;
@@ -53,8 +55,6 @@ li:not(:hover) {
   }
 
   .navbarContainer {
-    // margin:auto;
-    // max-width: 1500px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,6 +63,7 @@ li:not(:hover) {
       display: flex;
       flex-direction: row;
       align-items: center;
+
       li {
         padding: 0.5em;
         list-style: none;
@@ -74,22 +75,36 @@ li:not(:hover) {
         align-items: center;
         padding-right: 3em;
       }
+      button {
+        display: none;
+      }
     }
   }
 }
 
-@media screen and (max-width: 650px) and (orientation: portrait) {
-  .navbar {
-    flex-direction: column;
-    margin: 0;
-  }
+
+@media screen and (max-width: 825px) and (orientation: portrait) {
+  // .navbar {
+  //   margin: 0;
+  // }
   .navbarContainer > .left {
     padding: 0;
+    align-self: flex-start !important;
   }
-  ul {
-    margin: 0;
+  .navbarContainer {
+    display: flex !important;
+    ul { 
+      flex-direction: column !important;
+      .link{
+        visibility: hidden;
+      }
+    }
   }
   h1 {
     margin-top: 3vh;
+  }
+  .dropBtn {
+    display:inline-block !important; 
+    position: relative !important;
   }
 }
