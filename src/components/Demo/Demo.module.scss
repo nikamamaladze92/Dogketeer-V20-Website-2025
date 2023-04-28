@@ -49,6 +49,10 @@
 .toggle:hover {
   background: lightblue;
   color: navy;
+  transition: .5s;
+}
+.toggle:not(:hover) {
+  transition: .3s;
 }
 
 .gifContainer {
