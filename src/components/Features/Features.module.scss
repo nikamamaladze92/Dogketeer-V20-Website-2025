@@ -4,7 +4,6 @@
   padding-top: 13em;
 
   .features {
-
     .featureCards {
       max-width: 1200px;
       display: flex;
@@ -32,7 +31,7 @@ h4 {
 
 .article {
   cursor: pointer;
-  color:  rgba(154, 180, 251);
+  color: rgba(154, 180, 251);
   font-size: 16px;
   text-decoration: none;
   margin: auto;
@@ -40,4 +39,25 @@ h4 {
 
 .article:hover {
   color: rgb(26, 28, 130);
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in.visible {
+  animation-name: fadeInFromRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
