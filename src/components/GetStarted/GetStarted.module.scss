@@ -25,4 +25,8 @@
 .githubButton:hover {
   cursor: pointer;
   background: rgba(154, 180, 251);
+  transition: .3s;
+}
+.githubButton:not(:hover) {
+  transition: .3s;
 }

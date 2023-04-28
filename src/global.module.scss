@@ -6,7 +6,8 @@ body {
   padding: 0;
   color: white;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
+  font-family: 'Open Sans';
 }
 
 #root {
@@ -23,6 +24,8 @@ canvas {
   z-index: -1;
 }
 
-h1, h2 {
-  font-family: "Prompt";
+h1,
+h2,
+h3 {
+  font-family: 'Prompt';
 }

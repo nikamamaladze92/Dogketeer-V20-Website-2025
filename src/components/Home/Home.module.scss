@@ -1,13 +1,11 @@
 .homeContainer {
   max-width: 76em;
-
   margin: auto;
-  margin-top: 13em;
-  margin-bottom: 13em;
+  padding-top: 30vh;
 
   .home {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
 
     .left {
       margin: auto;
@@ -22,5 +20,14 @@
       max-width: 500px;
       margin: auto;
     }
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homeContainer > .home {
+    flex-direction: column;
   }
 }

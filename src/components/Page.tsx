@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
 import Features from './Features/Features';
@@ -7,31 +7,29 @@ import GetStarted from './GetStarted/GetStarted';
 import Team from './Team/Team';
 import { Link, Element } from 'react-scroll';
 
-
 const Page = (): JSX.Element => {
   return (
-    <div className='pageContainer'>
+    <div className="pageContainer">
       <Navbar />
-      <Element name="home">
+      <Element name='home'>
         <Home />
       </Element>
-      <Element name='features'>
+      <Element name="features">
         <Features />
       </Element>
-      <Element name="demo">
+      <Element name='demo'>
         <div>
           <Demo />
         </div>
       </Element>
-      <Element name="getstarted">
+      <Element name='getstarted'>
         <GetStarted />
       </Element>
-      <Element name="team">
+      <Element name='team'>
         <Team />
       </Element>
     </div>
   );
 };
-
 
 export default Page;
