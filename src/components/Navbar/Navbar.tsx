@@ -8,7 +8,8 @@ function Navbar() {
   const displayNav = function(){
     // const link2 = document.querySelector('li')
     // link2.style.visibility = 'visible'
-    const links = document.getElementsByClassName('link') as HTMLCollectionOf<HTMLElement>
+    // const links = document.getElementsByClassName('link') as HTMLCollectionOf<HTMLElement>
+    const links = document.querySelectorAll('li')
     for(let i = 0; i < links.length; i++){
       const link = links[i] as HTMLElement;
       link.style.color = 'blue';
