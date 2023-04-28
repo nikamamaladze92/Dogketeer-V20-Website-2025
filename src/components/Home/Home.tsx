@@ -11,9 +11,10 @@ function Home(): JSX.Element {
   const spring = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView
-      ? 'translateX(0) translateY(0)'
-      : 'translateX(-100px) translateY(-100px)',
+      ? 'translateX(0) translateY(0) scale(1)'
+      : 'translateX(-50%) translateY(-50%) scale(0)',
   });
+  
 
   return (
     <animated.div style={spring} ref={ref}>
