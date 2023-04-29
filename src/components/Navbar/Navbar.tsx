@@ -2,36 +2,42 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import github from '../../assets/github-mark/github-mark-white.png';
 import styles from './Navbar.module.scss';
-import docker from '../../assets/docketeerlogo.png'
+import docker from '../../assets/docketeerlogo.png';
 
 const Navbar = (): JSX.Element => {
-  const displayNav = function(){
-    const links = document.querySelectorAll('li')
-    for(let i = 0; i < links.length; i++){
+  const displayNav = function () {
+    console.log('hi');
+    const links = document.querySelectorAll('li');
+    for (let i = 0; i < links.length; i++) {
       const link = links[i] as HTMLElement;
+      console.log(link.style.visibility);
       // link.style.color = 'blue';
-      if(link.style.visibility === 'visible'){
-        link.style.visibility = 'hidden'
-      }else
-      link.style.visibility = 'visible';
+      if (link.style.visibility === 'visible') {
+        link.style.visibility = 'hidden';
+      } else link.style.visibility = 'visible';
     }
-  }
+  };
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
           <h1 className={styles.name}>Docketeer</h1>
-          <img
-            width='40px'
-            height='40px'
-            src={docker}
-            alt='none'
-          />
+          <img width='40px' height='40px' src={docker} alt='none' />
         </div>
         <ul>
           <div onClick={() => displayNav()}>
-            <svg className={styles.dropBtn} xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white"viewBox="0 0 16 16">
-            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            <svg
+              className={styles.dropBtn}
+              xmlns='http://www.w3.org/2000/svg'
+              width='35'
+              height='35'
+              fill='white'
+              viewBox='0 0 16 16'
+            >
+              <path
+                fillRule='evenodd'
+                d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'
+              />
             </svg>
           </div>
           <li className={styles.link}>
@@ -91,7 +97,10 @@ const Navbar = (): JSX.Element => {
           </li>
           <div className={styles.icons}>
             <li className={styles.link}>
-              <a href='https://github.com/orgs/oslabs-beta/teams/docketeer-xii' target="_blank">
+              <a
+                href='https://github.com/orgs/oslabs-beta/teams/docketeer-xii'
+                target='_blank'
+              >
                 <img
                   width='23px'
                   height='23px'
@@ -101,7 +110,10 @@ const Navbar = (): JSX.Element => {
               </a>
             </li>
             <li className={styles.link}>
-              <a href='https://www.linkedin.com/company/docketeer/' target="_blank" >
+              <a
+                href='https://www.linkedin.com/company/docketeer/'
+                target='_blank'
+              >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='23'
@@ -119,6 +131,6 @@ const Navbar = (): JSX.Element => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
