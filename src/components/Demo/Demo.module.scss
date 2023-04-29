@@ -59,10 +59,10 @@
 
 .toggle:hover {
   background: rgba(154, 180, 251);
-  transition: .3s;
+  transition: 0.3s;
 }
 .toggle:not(:hover) {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .gifContainer {
@@ -71,6 +71,12 @@
 
 .gifs {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
+}
+.gifMobile {
+  // align-content: center;
+  width: 350px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
 }
@@ -111,21 +117,21 @@
   }
 }
 
-@media screen and (max-width: 650px) {
-  .demoDisplay {
-    flex-direction: column;
-    margin: 25px auto;
-  }
-  .toggleContainer {
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-  }
-  .gifContainer {
-    width: 100%;
-    height: auto;
-  }
-  .mainContainer {
-    width: fit-content;
-  }
-}
+// @media screen and (max-width: 650px) {
+//   .demoDisplayLoaded {
+//     flex-direction: column;
+//     margin: 25px auto;
+//   }
+//   .toggleContainer {
+//     justify-content: center;
+//     align-items: center;
+//     padding: 0px;
+//   }
+//   .gifContainer {
+//     width: 100%;
+//     height: auto;
+//   }
+//   .mainContainer {
+//     width: fit-content;
+//   }
+// }

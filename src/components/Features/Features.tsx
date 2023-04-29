@@ -82,55 +82,15 @@ function Features() {
           Read about us on Medium!
         </a>
         <div className={styles.featureCards}>
-          <FeatureCard
-            header={'Container Management'}
-            img={containers}
-            info={'Easily start, stop, and remove Docker containers'}
-          />
-          <FeatureCard
-            header={'Image Management'}
-            img={images}
-            info={'Easily view, run, remove, and search for Docker images'}
-          />
-          <FeatureCard
-            header={'Container Metrics'}
-            img={metrics}
-            info={
-              'Access metrics related to containers in a dashboard with rich visualizations'
-            }
-          />
-          <FeatureCard
-            header={'Cluster Metrics'}
-            img={kubernetes}
-            info={
-              'Access metrics related to Kubernetes clusters with just the toggle of a button'
-            }
-          />
-
-          <FeatureCard
-            header={'Detailed Process Logs'}
-            img={logs}
-            info={'View and download process logs related to containers'}
-          />
-          <FeatureCard
-            header={'Secure Authentication'}
-            img={security}
-            info={
-              "Maintain trust in Docketeer's encryption and hashing methods"
-            }
-          />
-          <FeatureCard
-            header={'Sessions'}
-            img={cookie}
-            info={
-              "Stay logged in thanks to Docketeer's implementation of sessions and cookies"
-            }
-          />
-          <FeatureCard
-            header={'System Prune'}
-            img={prune}
-            info={'Clear up unused images to ensure optimized performance'}
-          />
+          {featureData.map((item, index) => (
+            <FeatureCard
+              key={index}
+              header={item.header}
+              img={item.img}
+              info={item.info}
+              animation={animations[index]}
+            />
+          ))}
         </div>
       </div>
     </div>
