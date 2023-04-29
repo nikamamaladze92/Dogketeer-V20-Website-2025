@@ -31,3 +31,9 @@
 .githubButton:not(:hover) {
   transition: .3s;
 }
+
+@media screen and (max-width: 520px) {
+  .getStartedDisplay {
+    padding: 6vh 2vh;
+  }
+}

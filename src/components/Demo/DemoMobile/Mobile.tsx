@@ -9,12 +9,17 @@ import styles from '../Demo.module.scss';
 
 const Mobile = (): JSX.Element => {
   const gifs = [
-    { name: 'containers', url: containers },
-    { name: 'images', url: images },
-    { name: 'containerMetrics', url: containerMetrics },
-    { name: 'k8sMetrics', url: k8sMetrics },
-    { name: 'logs', url: logs },
+    { name: 'Containers', url: containers },
+    { name: 'Images', url: images },
+    { name: 'Container Metrics', url: containerMetrics },
+    { name: 'Cluster Metrics', url: k8sMetrics },
+    { name: 'Process Logs', url: logs },
   ];
+
+  const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'View, run, remove, or search for images with ease.',
+    'Observe metrics related to containers as well as your CPU.', 'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
+    'Access process logs right in Docketeer or save them for later.'];
+
   const [currGif, setGif] = useState(0);
   const handleClick = (direction: string) => {
     if (direction === 'right') {
@@ -43,15 +48,16 @@ const Mobile = (): JSX.Element => {
           className={styles.gifMobileButtons}
           onClick={() => handleClick('')}
         >
-          Go left
+          &larr;
         </div>
         <div
           className={styles.gifMobileButtons}
           onClick={() => handleClick('right')}
         >
-          Go right
+          &rarr;
         </div>
       </div>
+      <p className={styles.mobileDesc}>{descriptions[currGif]}</p>
     </div>
   );
 };

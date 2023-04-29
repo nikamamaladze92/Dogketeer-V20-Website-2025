@@ -7,9 +7,9 @@ interface DemoToggleProps {
 }
 
 const DemoToggle: React.FC<DemoToggleProps> = ({ setCurrentGif, currentGif }): JSX.Element => {
-  const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'View, run, remove, or search for images with ease.', 
-  'Observe metrics related to containers as well as your CPU.', 'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.', 
-  'Access process logs right in Docketeer or save them for later.'];
+  const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'View, run, remove, or search for images with ease.',
+    'Observe metrics related to containers as well as your CPU.', 'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
+    'Access process logs right in Docketeer or save them for later.'];
 
   const handleClick = (gifIndex: number) => {
     setCurrentGif(gifIndex);

@@ -50,12 +50,6 @@
     }
   }
 
-  @media screen and (max-width: 650px) {
-    .othersContainer {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
   .osp4Container {
     margin: auto;
     max-width: 86em;
@@ -104,3 +98,10 @@
     
   }
 }
+
+@media screen and (max-width: 650px) {
+  .othersContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

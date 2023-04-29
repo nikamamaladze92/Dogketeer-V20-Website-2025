@@ -29,9 +29,9 @@ function init() {
 
   // Create a gradient from blue to black
   let gradient = context.createLinearGradient(0, 0, 0, canvas.height);
-  
-gradient.addColorStop(0, '#000000');
-gradient.addColorStop(1, '#000005');
+
+  gradient.addColorStop(0, '#000000');
+  gradient.addColorStop(1, '#000005');
 
 
   // Fill the canvas with the gradient
