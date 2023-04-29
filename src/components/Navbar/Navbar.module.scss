@@ -69,6 +69,7 @@ li:not(:hover) {
         padding: 0.5em;
         list-style: none;
         text-decoration: none;
+        visibility: visible;
       }
       .icons {
         display: flex;
@@ -83,12 +84,23 @@ li:not(:hover) {
   }
 }
 
-@media screen and (max-width: 825px) and (orientation: portrait) {
+@media screen and (max-width: 840px) and (orientation: portrait) {
   .navbarContainer > .left {
     padding: 0;
     align-self: flex-start;
   }
   .navbarContainer {
+    a svg {
+      width: 16px;
+      height: 16px;
+    }
+    img {
+      width: 16px;
+      height: 16px;
+    }
+    li {
+      font-size: 14px;
+    }
     ul {
       flex-direction: column !important;
       .link {

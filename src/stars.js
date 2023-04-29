@@ -64,7 +64,7 @@ function init() {
     gradient.addColorStop(1, '#000005');
     context.fillStyle = gradient;
     context.fillRect(0, 0, canvas.width, canvas.height);
-    texture.needsUpdate = true;
+    // texture.needsUpdate = true;
   });
 }
 
