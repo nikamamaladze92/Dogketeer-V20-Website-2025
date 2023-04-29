@@ -81,6 +81,23 @@
   box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
 }
 
+.gifMobileButtonsBox {
+  display: flex;
+  flex-direction: row;
+  // align-items: center;
+  justify-content: space-around;
+}
+.gifMobileButtons {
+  border-radius: 5px;
+  align-content: center;
+  padding: 3px 35px 3px 80px;
+  box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
+}
+.gifMobileButtons:hover {
+  background: rgba(154, 180, 251);
+  transition: 0.3s;
+}
+
 @media screen and (min-width: 1275px) {
   .gifContainer {
     width: 640px; /* set the width to 50% when screen width is 768px or less */
