@@ -1,10 +1,11 @@
 .demoDisplayLoaded {
+  height: 70vh;
+  padding-top: 12vh;
   max-width: 84em;
-  margin: auto;
+  margin: 25px auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  padding-top: 30vh;
   transform: scale(0);
   animation: zoom-in 1s forwards;
 }
@@ -13,6 +14,12 @@
   opacity: 0;
   width: 20%;
   transition: opacity 0.5s ease-out;
+}
+.demoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainContainer {
@@ -32,11 +39,15 @@
   padding: 20px;
 }
 
+.action {
+  font-size: 18px;
+}
+
 .toggle {
   cursor: pointer;
   width: 160px;
   height: 40px;
-  margin: 0 3px 20px 3px;
+  margin: 0 7px 20px 7px;
   background: transparent;
   box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
   color: white;
@@ -47,8 +58,11 @@
 }
 
 .toggle:hover {
-  background: lightblue;
-  color: navy;
+  background: rgba(154, 180, 251);
+  transition: .3s;
+}
+.toggle:not(:hover) {
+  transition: .3s;
 }
 
 .gifContainer {
@@ -71,7 +85,7 @@
 @media screen and (max-width: 1000px) {
   .demoDisplayLoaded {
     max-width: 84em;
-    margin: auto;
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -100,7 +114,7 @@
 @media screen and (max-width: 650px) {
   .demoDisplay {
     flex-direction: column;
-    margin: auto;
+    margin: 25px auto;
   }
   .toggleContainer {
     justify-content: center;

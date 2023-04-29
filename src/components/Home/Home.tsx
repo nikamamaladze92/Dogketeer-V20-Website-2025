@@ -1,36 +1,65 @@
 import React from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './Home.module.scss';
-import docketeer from '../../assets/docketeer.png';
-import docker from "../../assets/dockerlogo.png"
-import kuber from "../../assets/kuberneteslogo.png"
-import { useInView } from 'react-intersection-observer';
-import { useSpring, animated } from 'react-spring';
+import docker from '../../assets/docketeerlogo.png'
+import { Link } from 'react-scroll';
 
-function Home(): JSX.Element {
-  const [ref, inView] = useInView();
-  const spring = useSpring({
-    opacity: inView ? 1 : 0,
-    transform: inView
-      ? 'translateX(0) translateY(0)'
-      : 'translateX(-100px) translateY(-100px)',
-  });
+const Home = (): JSX.Element => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const homeRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsLoaded(true);
+          setIsIntersecting(true);
+          observer.unobserve(entry.target);
+        } else {
+          setIsIntersecting(false);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    const currentRef = homeRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    }; 
+  }, []);
 
   return (
-    <animated.div style={spring} ref={ref}>
-      <div className={styles.homeContainer}>
-        <div className={styles.home}>
+        <div className={isLoaded && isIntersecting
+          ? styles.homeLoaded
+          : styles.homeDisplay
+      } ref={homeRef}>
           <div className={styles.left}>
             <div className={styles.description}>
-              <h1>Introducing Docketeer XII</h1>
-              <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quam maiores illo officia dolores, nulla quaerat? Laboriosam quis cupiditate modi nihil officiis odit. Quaerat vel illo sequi ipsa, id dolores.</h3>
+              <h1 className={styles.mainTitle}>Introducing Docketeer XII</h1>
+              <p>Docketeer is a developer-friendly application that provides a single interface for both container management & metric visualization, now with the ability to view Kubernetes cluster metrics.</p>
             </div>
+            <div className={styles.explore}><Link
+              to='features'
+              smooth={true}
+              hashSpy={true}
+              spy={true}
+              duration={600}
+            >
+              Start Exploring
+            </Link></div>
           </div>
           <div className={styles.right}>
             <img width='300px' height='auto' src={docker} alt="docketeer_img" />
           </div>
         </div>
-      </div>
-    </animated.div>
   );
 }
 

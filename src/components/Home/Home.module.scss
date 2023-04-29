@@ -1,17 +1,17 @@
-.homeContainer {
+.homeLoaded {
+  height: 95vh;
   max-width: 76em;
   margin: auto;
-  padding-top: 30vh;
-
-  .home {
-    display: flex;
-    // flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: scale(0);
+  animation: zoom-in 1s forwards;
     .left {
       margin: auto;
 
       .description {
-        max-width: 500px;
+        max-width: 550px;
       }
     }
 
@@ -20,14 +20,68 @@
       max-width: 500px;
       margin: auto;
     }
-    h3 {
-      margin-top: 0;
-    }
+}
+
+.homeDisplay{
+  opacity: 0;
+  width: 50%;
+  transition: opacity 0.5s ease-out;
+}
+
+.mainTitle {
+  font-size: 4.2vh;
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.explore {
+  cursor: pointer;
+  margin: auto;
+  width: 150px;
+  background: transparent;
+  box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.782);
+  color: white;
+  font-size: 15px;
+  display: block;
+  border-radius: 20px;
+  line-height: 40px;
+}
+.explore:hover {
+  background: rgba(154, 180, 251);
+  transition: .3s;
+}
+.explore:not(:hover) {
+  transition: .3s;
+}
+
+.right {
+  animation: updown 3s ease-in-out infinite;
+  animation-play-state: running;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
 @media screen and (max-width: 650px) {
-  .homeContainer > .home {
-    flex-direction: column;
+  .homeLoaded {
+    margin-top: 30vh;
+    flex-direction: column ;
   }
 }

@@ -1,20 +1,21 @@
 import React from 'react';
 import styles from './Features.module.scss';
+import { animated } from 'react-spring';
 
-
-interface FeatureCardProps {
-  header: string,
-  img: string,
-  info: string
+export interface FeatureCardProps {
+  header: string;
+  img: string;
+  info: string;
+  animation: unknown;
 }
 
-function FeatureCard(props: FeatureCardProps) {
+const FeatureCard = ({ animation, header, img, info }): JSX.Element =>{
   return (
-    <div className={styles.featureCard}>
-      <h3>{props.header}</h3>
-      <img src={props.img} alt="img" />
-      <p>{props.info}</p>
-    </div>
+    <animated.div className={styles.featureCard} style={animation}>
+      <h3>{header}</h3>
+      <img className={styles.img} src={img} alt="img" />
+      <p>{info}</p>
+    </animated.div>
   );
 }
 

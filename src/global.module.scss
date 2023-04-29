@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-family: 'Open Sans';
   font-family: 'Open Sans';
+  overflow-x: hidden;
 }
 
 #root {
@@ -28,4 +29,5 @@ h1,
 h2,
 h3 {
   font-family: 'Prompt';
+  padding: 0 4vh;
 }

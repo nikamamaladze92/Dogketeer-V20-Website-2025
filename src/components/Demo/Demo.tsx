@@ -37,16 +37,17 @@ const Demo = (): JSX.Element => {
   }, []);
 
   return (
-    <div
-      className={
-        isLoaded && isIntersecting
-          ? styles.demoDisplayLoaded
-          : styles.demoDisplay
-      }
-      ref={demoRef}
-    >
-      <DemoToggle setCurrentGif={setCurrentGif} />
-      <DemoImage currentGif={currentGif} />
+    <div className={
+      isLoaded && isIntersecting
+        ? styles.demoDisplayLoaded
+        : styles.demoDisplay
+    }
+      ref={demoRef}>
+      <h1 className={styles.title}>See Docketeer in Action</h1>
+      <div className={styles.demoContainer}>
+        <DemoToggle setCurrentGif={setCurrentGif} currentGif={currentGif} />
+        <DemoImage currentGif={currentGif} />
+      </div>
     </div>
   );
 };

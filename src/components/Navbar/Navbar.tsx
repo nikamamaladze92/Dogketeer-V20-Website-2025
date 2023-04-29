@@ -2,22 +2,39 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import github from '../../assets/github-mark/github-mark-white.png';
 import styles from './Navbar.module.scss';
+import docker from '../../assets/docketeerlogo.png'
 
-function Navbar() {
+const Navbar = (): JSX.Element => {
+  const displayNav = function(){
+    const links = document.querySelectorAll('li')
+    for(let i = 0; i < links.length; i++){
+      const link = links[i] as HTMLElement;
+      // link.style.color = 'blue';
+      if(link.style.visibility === 'visible'){
+        link.style.visibility = 'hidden'
+      }else
+      link.style.visibility = 'visible';
+    }
+  }
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
-          <h1>Docketeer</h1>
+          <h1 className={styles.name}>Docketeer</h1>
           <img
             width='40px'
             height='40px'
-            src='https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png'
+            src={docker}
             alt='none'
           />
         </div>
         <ul>
-          <li>
+          <div onClick={() => displayNav()}>
+            <svg className={styles.dropBtn} xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white"viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </div>
+          <li className={styles.link}>
             <Link
               to='home'
               smooth={true}
@@ -28,7 +45,7 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li>
+          <li className={styles.link}>
             <Link
               to='features'
               spy={true}
@@ -39,7 +56,7 @@ function Navbar() {
               Features
             </Link>
           </li>
-          <li>
+          <li className={styles.link}>
             <Link
               to='demo'
               smooth={true}
@@ -50,7 +67,7 @@ function Navbar() {
               Demo
             </Link>
           </li>
-          <li>
+          <li className={styles.link}>
             <Link
               to='getstarted'
               smooth={true}
@@ -61,7 +78,7 @@ function Navbar() {
               Get Started
             </Link>
           </li>
-          <li>
+          <li className={styles.link}>
             <Link
               to='team'
               smooth={true}
@@ -73,8 +90,8 @@ function Navbar() {
             </Link>
           </li>
           <div className={styles.icons}>
-            <li>
-              <a href='https://github.com/orgs/oslabs-beta/teams/docketeer-xii'>
+            <li className={styles.link}>
+              <a href='https://github.com/orgs/oslabs-beta/teams/docketeer-xii' target="_blank">
                 <img
                   width='23px'
                   height='23px'
@@ -83,8 +100,8 @@ function Navbar() {
                 />
               </a>
             </li>
-            <li>
-              <a href='http://google.com'>
+            <li className={styles.link}>
+              <a href='https://www.linkedin.com/company/docketeer/' target="_blank" >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='23'
