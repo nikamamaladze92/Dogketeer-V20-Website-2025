@@ -73,7 +73,12 @@ const Features = (): JSX.Element => {
     <div className={styles.featuresContainer} ref={ref}>
       <div className={styles.features}>
         <h1>Features</h1>
-        <a className={styles.article} href="http://google.com" target="_blank" rel="noopener noreferrer">
+        <a
+          className={styles.article}
+          href="http://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Read about us on Medium!
         </a>
         <div className={styles.featureCards}>
@@ -93,4 +98,3 @@ const Features = (): JSX.Element => {
 }
 
 export default Features;
-

@@ -24,7 +24,6 @@
   height: 100vh;
 
   .features {
-
     .featureCards {
       max-width: 1200px;
       display: flex;
@@ -52,7 +51,7 @@ h4 {
 
 .article {
   cursor: pointer;
-  color:  rgba(154, 180, 251);
+  color: rgba(154, 180, 251);
   font-size: 16px;
   text-decoration: none;
   margin: auto;
@@ -60,43 +59,10 @@ h4 {
 
 .article:hover {
   color: #fffd96;
-  transition: .3s;
+  transition: 0.3s;
 }
 .article:not(:hover) {
-  transition: .3s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animated {
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-
-.delay-1 {
-  animation-delay: 0.25s;
-}
-
-.delay-2 {
-  animation-delay: 0.5s;
-}
-
-.delay-3 {
-  animation-delay: 0.75s;
-}
-
-.delay-4 {
-  animation-delay: 1s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 825px) {

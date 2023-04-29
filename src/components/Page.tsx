@@ -11,21 +11,21 @@ const Page = (): JSX.Element => {
   return (
     <div className="pageContainer">
       <Navbar />
-      <Element name='home'>
+      <Element name="home">
         <Home />
       </Element>
       <Element name="features">
         <Features />
       </Element>
-      <Element name='demo'>
+      <Element name="demo">
         <div>
           <Demo />
         </div>
       </Element>
-      <Element name='getstarted'>
+      <Element name="getstarted">
         <GetStarted />
       </Element>
-      <Element name='team'>
+      <Element name="team">
         <Team />
       </Element>
     </div>
