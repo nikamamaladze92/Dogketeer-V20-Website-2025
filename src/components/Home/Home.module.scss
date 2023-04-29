@@ -29,14 +29,9 @@
 }
 
 .mainTitle {
-  font-size: 40px;
+  font-size: 4.2vh;
 }
 
-@media screen and (max-width: 650px) {
-  .homeContainer > .home {
-    flex-direction: column;
-  }
-}
 @keyframes zoom-in {
   0% {
     opacity: 0;
@@ -81,5 +76,12 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homeLoaded {
+    margin-top: 30vh;
+    flex-direction: column ;
   }
 }

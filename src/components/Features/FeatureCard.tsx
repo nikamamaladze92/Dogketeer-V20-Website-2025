@@ -6,15 +6,15 @@ export interface FeatureCardProps {
   header: string;
   img: string;
   info: string;
-  animation: any;
+  animation: unknown;
 }
 
-function FeatureCard(props: FeatureCardProps) {
+const FeatureCard = ({ animation, header, img, info }): JSX.Element =>{
   return (
-    <animated.div className={styles.featureCard} style={props.animation}>
-      <h3>{props.header}</h3>
-      <img src={props.img} alt="img" />
-      <p>{props.info}</p>
+    <animated.div className={styles.featureCard} style={animation}>
+      <h3>{header}</h3>
+      <img className={styles.img} src={img} alt="img" />
+      <p>{info}</p>
     </animated.div>
   );
 }
