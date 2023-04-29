@@ -100,12 +100,10 @@ li:not(:hover) {
     }
     li {
       font-size: 14px;
+      visibility: hidden;
     }
     ul {
       flex-direction: column !important;
-      .link {
-        visibility: hidden;
-      }
       .icons {
         display: flex !important;
         flex-direction: column !important;
