@@ -31,11 +31,6 @@ function init() {
   let gradient = context.createLinearGradient(0, 0, 0, canvas.height);
   
 gradient.addColorStop(0, '#000000');
-// gradient.addColorStop(0.2, '#000000');
-// gradient.addColorStop(0.4, '#000000');
-// gradient.addColorStop(0.5, '#020202');
-// gradient.addColorStop(0.6, '#060507');
-// gradient.addColorStop(0.7, '#0C0A0F');
 gradient.addColorStop(1, '#000005');
 
 
@@ -66,7 +61,7 @@ gradient.addColorStop(1, '#000005');
     canvas.height = window.innerHeight;
     gradient = context.createLinearGradient(0, 0, 0, canvas.height);
     gradient.addColorStop(0, '#000000');
-    gradient.addColorStop(1, '##000005');
+    gradient.addColorStop(1, '#000005');
     context.fillStyle = gradient;
     context.fillRect(0, 0, canvas.width, canvas.height);
     texture.needsUpdate = true;

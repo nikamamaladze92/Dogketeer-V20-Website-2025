@@ -4,11 +4,8 @@ import github from '../../assets/github-mark/github-mark-white.png';
 import styles from './Navbar.module.scss';
 import docker from '../../assets/docketeerlogo.png'
 
-function Navbar() {
+const Navbar = (): JSX.Element => {
   const displayNav = function(){
-    // const link2 = document.querySelector('li')
-    // link2.style.visibility = 'visible'
-    // const links = document.getElementsByClassName('link') as HTMLCollectionOf<HTMLElement>
     const links = document.querySelectorAll('li')
     for(let i = 0; i < links.length; i++){
       const link = links[i] as HTMLElement;
@@ -23,7 +20,7 @@ function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
-          <h1>Docketeer</h1>
+          <h1 className={styles.name}>Docketeer</h1>
           <img
             width='40px'
             height='40px'
@@ -32,7 +29,11 @@ function Navbar() {
           />
         </div>
         <ul>
-          <button className={styles.dropBtn} onClick={() => displayNav()}>dropdown</button>
+          <div onClick={() => displayNav()}>
+            <svg className={styles.dropBtn} xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white"viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </div>
           <li className={styles.link}>
             <Link
               to='home'

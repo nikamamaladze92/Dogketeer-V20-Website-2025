@@ -2,13 +2,13 @@ import React from 'react';
 import githubLogo from '../../assets/github-mark/github-mark-white.png';
 import styles from './Team.module.scss';
 
-interface othersProps {
+export interface othersProps {
   name: string;
   linkedin: string;
   github: string;
 }
 
-const AllOthers: React.FC<othersProps> = ({ name, linkedin, github }) => {
+const AllOthers = ({ name, linkedin, github }): JSX.Element => {
   return (
     <div>
       <p className={styles.person}>

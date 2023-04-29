@@ -13,7 +13,7 @@ import prune from '../../assets/features/prune.svg';
 import { useInView } from 'react-intersection-observer';
 import { useSprings, config } from 'react-spring';
 
-function Features() {
+const Features = (): JSX.Element => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   const animations = useSprings(
