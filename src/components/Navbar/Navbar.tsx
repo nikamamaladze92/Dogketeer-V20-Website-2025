@@ -6,7 +6,6 @@ import docker from '../../assets/docketeerlogo.png';
 
 const Navbar = (): JSX.Element => {
   const displayNav = function () {
-    console.log('hi');
     const links = document.querySelectorAll('li');
     for (let i = 0; i < links.length; i++) {
       const link = links[i] as HTMLElement;
