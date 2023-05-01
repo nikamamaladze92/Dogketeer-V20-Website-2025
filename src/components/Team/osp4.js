@@ -24,7 +24,7 @@ const osp4 = [
   },
   {
     img: jay,
-    name: 'Jay Salgado',
+    name: 'Joseph Salgado',
     linkedin: 'https://www.linkedin.com/in/joseph-salgado-76410620b/',
     github: 'https://github.com/Jaysalgado',
   },

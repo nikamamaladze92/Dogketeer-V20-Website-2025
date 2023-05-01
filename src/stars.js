@@ -28,7 +28,7 @@ function init() {
   canvas.height = window.innerHeight;
 
   // Create a gradient from blue to black
-  let gradient = context.createLinearGradient(0, 0, 0, canvas.height);
+  let gradient = context.createLinearGradient(0, 0, 0, window.innerHeight);
 
   gradient.addColorStop(0, '#000000');
   gradient.addColorStop(1, '#000005');
@@ -36,7 +36,7 @@ function init() {
 
   // Fill the canvas with the gradient
   context.fillStyle = gradient;
-  context.fillRect(0, 0, canvas.width, canvas.height);
+  context.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
   // Create a texture from the canvas
   const texture = new THREE.CanvasTexture(canvas);
