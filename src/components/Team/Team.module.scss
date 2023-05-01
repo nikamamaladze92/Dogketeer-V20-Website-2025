@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width: 650px) {
+  h2 {
+    font-size: 26px;
+  }
+
   .othersContainer {
     height: fit-content;
     grid-template-columns: repeat(2, 200px) !important;
