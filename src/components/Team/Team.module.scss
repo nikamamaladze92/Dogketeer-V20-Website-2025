@@ -72,12 +72,12 @@
 
   .person {
     font-size: 14px;
-    margin: 10px;
+    margin: 5px;
   }
 
   .github {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     margin-left: 5px;
   }
 
@@ -95,16 +95,22 @@
 }
 
 @media screen and (max-width: 650px) {
-  .othersContainer {
-    grid-template-columns: repeat(3, 200px);
-  }
-  
-  .osp4box {
-    padding: 0 2vh;
+  h2 {
+    font-size: 26px;
   }
 
   .othersContainer {
-    padding: 0 2vh;
+    height: fit-content;
+    grid-template-columns: repeat(2, 200px) !important;
+    font-size: 13px;
+  }
+
+  .osp4box {
+    padding: 0;
+    margin: 0 1vh;
+  }
+
+  .othersContainer {
+    padding: 0 10px !important;
   }
 }
-
