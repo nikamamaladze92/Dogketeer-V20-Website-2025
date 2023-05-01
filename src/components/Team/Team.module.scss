@@ -96,9 +96,10 @@
 
 @media screen and (max-width: 650px) {
   .othersContainer {
-    grid-template-columns: repeat(3, 200px);
+    height: fit-content;
+    grid-template-columns: repeat(2, 200px) !important;
   }
-  
+
   .osp4box {
     padding: 0 2vh;
   }
@@ -107,4 +108,3 @@
     padding: 0 2vh;
   }
 }
-
