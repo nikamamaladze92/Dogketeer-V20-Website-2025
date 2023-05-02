@@ -5,7 +5,7 @@ import Features from './Features/Features';
 import Demo from './Demo/Demo';
 import GetStarted from './GetStarted/GetStarted';
 import Team from './Team/Team';
-import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 import { Element } from 'react-scroll';
 
 const Page = (): JSX.Element => {
@@ -28,9 +28,6 @@ const Page = (): JSX.Element => {
       </Element>
       <Element name="team">
         <Team />
-      </Element>
-      <Element name="footer">
-        <Footer />
       </Element>
     </div>
   );
