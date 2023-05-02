@@ -95,7 +95,7 @@ const Navbar = (): JSX.Element => {
           <div className={styles.icons}>
             <li className={styles.link}>
               <a
-                href="https://github.com/orgs/oslabs-beta/teams/docketeer-xii"
+                href="https://github.com/open-source-labs/Docketeer"
                 target="_blank"
               >
                 <img
