@@ -89,12 +89,13 @@ const Features = (): JSX.Element => {
               img={item.img}
               info={item.info}
               animation={animations[index]}
+             
             />
           ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Features;

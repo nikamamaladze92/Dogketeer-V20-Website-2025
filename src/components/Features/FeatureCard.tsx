@@ -9,14 +9,18 @@ export interface FeatureCardProps {
   animation: unknown;
 }
 
-const FeatureCard = ({ animation, header, img, info }): JSX.Element =>{
+const FeatureCard = ({ animation, header, img, info }): JSX.Element => {
   return (
-    <animated.div className={styles.featureCard} style={animation}>
+    <animated.div
+      className={styles.featureCard}
+      style={animation}
+      data-testid={'feature-card'}
+    >
       <h3>{header}</h3>
       <img className={styles.img} src={img} alt="img" />
       <p>{info}</p>
     </animated.div>
   );
-}
+};
 
 export default FeatureCard;
