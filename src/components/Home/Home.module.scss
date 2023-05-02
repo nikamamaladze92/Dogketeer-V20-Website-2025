@@ -7,22 +7,22 @@
   justify-content: space-around;
   transform: scale(0);
   animation: zoom-in 1s forwards;
-    .left {
-      margin: auto;
+  .left {
+    margin: auto;
 
-      .description {
-        max-width: 550px;
-      }
+    .description {
+      max-width: 550px;
     }
+  }
 
-    .right {
-      padding: 2em;
-      max-width: 500px;
-      margin: auto;
-    }
+  .right {
+    padding: 2em;
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
-.homeDisplay{
+.homeDisplay {
   opacity: 0;
   width: 50%;
   transition: opacity 0.5s ease-out;
@@ -57,10 +57,10 @@
 }
 .explore:hover {
   background: rgba(154, 180, 251);
-  transition: .3s;
+  transition: 0.3s;
 }
 .explore:not(:hover) {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .right {
@@ -81,7 +81,7 @@
 
 @media screen and (max-width: 650px) {
   .homeLoaded {
-    margin-top: 30vh;
-    flex-direction: column ;
+    margin-top: 15vh;
+    flex-direction: column;
   }
 }
