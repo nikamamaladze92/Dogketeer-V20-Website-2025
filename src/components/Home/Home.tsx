@@ -4,7 +4,7 @@ import styles from './Home.module.scss';
 import docker from '../../assets/docketeerlogo.png'
 import { Link } from 'react-scroll';
 
-const Homie = (): JSX.Element => {
+const Home = (): JSX.Element => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const homeRef = useRef<HTMLDivElement>(null);
