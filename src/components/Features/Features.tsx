@@ -75,7 +75,7 @@ const Features = (): JSX.Element => {
         <h1>Features</h1>
         <a
           className={styles.article}
-          href="http://google.com"
+          href="https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -95,6 +95,6 @@ const Features = (): JSX.Element => {
       </div>
     </div>
   );
-}
+};
 
 export default Features;
