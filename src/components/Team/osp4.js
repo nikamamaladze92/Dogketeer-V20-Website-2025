@@ -1,6 +1,6 @@
 import anna from '../../assets/anna.png';
 import jaeni from '../../assets/jaeni.jpeg';
-import emily from '../../assets/emily.png';
+import emily from '../../assets/emily.jpeg';
 import jay from '../../assets/jay.jpg';
 
 const osp4 = [

@@ -59,11 +59,13 @@ li:not(:hover) {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
     ul {
       display: flex;
       flex-direction: row;
       align-items: center;
+      padding-left: 0px;
 
       li {
         padding: 0.5em;
@@ -103,6 +105,7 @@ li:not(:hover) {
     }
     ul {
       flex-direction: column !important;
+      padding-left: 0;
       .icons {
         display: flex !important;
         flex-direction: column !important;
