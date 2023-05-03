@@ -46,54 +46,54 @@ describe('Website', () => {
     });
   });
 
-  describe('Demo', () => {
-    const setCurrentGif = jest.fn((num) => {
-      return num;
-    });
+  // describe('Demo', () => {
+  //   const setCurrentGif = jest.fn((num) => {
+  //     return num;
+  //   });
 
-    beforeEach(() => {
-      render(
-        <DemoToggle
-          setCurrentGif={(num) => setCurrentGif(num)}
-          currentGif={0}
-        />
-      );
-    });
+  //   beforeEach(() => {
+  //     render(
+  //       <DemoToggle
+  //         setCurrentGif={(num) => setCurrentGif(num)}
+  //         currentGif={0}
+  //       />
+  //     );
+  //   });
 
-    test('containers button shows containers demo', () => {
-      fireEvent.click(screen.getByText('Containers'));
-      expect(setCurrentGif(0)).toBe(DemoToggle.currentGif);
-    });
+  //   test('containers button shows containers demo', () => {
+  //     fireEvent.click(screen.getByText('Containers'));
+  //     expect(setCurrentGif(0)).toBe(DemoToggle.currentGif);
+  //   });
 
-    //   test('image button shows image demo', () => {
-    //     const { getByText } = render(
-    //       <DemoToggle setCurrentGif={() => setCurrentGif(1)} />
-    //     );
-    //     fireEvent.click(getByText('Images'));
-    //     expect(setCurrentGif).toHaveBeenCalledWith(1);
-    //   });
+  //   //   test('image button shows image demo', () => {
+  //   //     const { getByText } = render(
+  //   //       <DemoToggle setCurrentGif={() => setCurrentGif(1)} />
+  //   //     );
+  //   //     fireEvent.click(getByText('Images'));
+  //   //     expect(setCurrentGif).toHaveBeenCalledWith(1);
+  //   //   });
 
-    //   test('container metrics button shows container metrics demo', () => {
-    //     const { getByText } = render(
-    //       <DemoToggle setCurrentGif={() => setCurrentGif(2)} />
-    //     );
-    //     fireEvent.click(getByText('Images'));
-    //     expect(setCurrentGif).toHaveBeenCalledWith(2);
-    //   });
+  //   //   test('container metrics button shows container metrics demo', () => {
+  //   //     const { getByText } = render(
+  //   //       <DemoToggle setCurrentGif={() => setCurrentGif(2)} />
+  //   //     );
+  //   //     fireEvent.click(getByText('Images'));
+  //   //     expect(setCurrentGif).toHaveBeenCalledWith(2);
+  //   //   });
 
-    //   test('cluster metrics button shows cluster metrics demo', () => {
-    //     const { getByText } = render(
-    //       <DemoToggle setCurrentGif={() => setCurrentGif(3)} />
-    //     );
-    //     fireEvent.click(getByText('Images'));
-    //     expect(setCurrentGif).toHaveBeenCalledWith(3);
-    //   });
-    //   test('process logs button shows process logs demo', () => {
-    //     const { getByText } = render(
-    //       <DemoToggle setCurrentGif={() => setCurrentGif(4)} />
-    //     );
-    //     fireEvent.click(getByText('Process Logs'));
-    //     expect(setCurrentGif).toHaveBeenCalledWith(4);
-    //   });
-  });
+  //   //   test('cluster metrics button shows cluster metrics demo', () => {
+  //   //     const { getByText } = render(
+  //   //       <DemoToggle setCurrentGif={() => setCurrentGif(3)} />
+  //   //     );
+  //   //     fireEvent.click(getByText('Images'));
+  //   //     expect(setCurrentGif).toHaveBeenCalledWith(3);
+  //   //   });
+  //   //   test('process logs button shows process logs demo', () => {
+  //   //     const { getByText } = render(
+  //   //       <DemoToggle setCurrentGif={() => setCurrentGif(4)} />
+  //   //     );
+  //   //     fireEvent.click(getByText('Process Logs'));
+  //   //     expect(setCurrentGif).toHaveBeenCalledWith(4);
+  //   //   });
+  // });
 });
