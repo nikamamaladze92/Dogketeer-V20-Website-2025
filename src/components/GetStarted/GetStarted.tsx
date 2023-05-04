@@ -15,7 +15,7 @@ const GetStarted = (): JSX.Element => {
       <div className={styles.githubButton}>
         <a
           className={styles.githubLink}
-          href="https://github.com/open-source-labs/Docketeer"
+          href="https://github.com/open-source-labs/Docketeer" target="blank"
         >
           GitHub <img className={styles.logo} src={githubLogo}></img>
         </a>
