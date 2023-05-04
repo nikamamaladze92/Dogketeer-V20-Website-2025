@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import github from '../../assets/github-mark/github-mark-white.png';
 import styles from './Navbar.module.scss';
-import docker from '../../assets/docketeerlogo.png';
-import docker2 from "../../assets/docketeerlogo2.png"
+import docker2 from '../../assets/docketeerlogo2.png'
 
 const Navbar = (): JSX.Element => {
   const displayNav = function () {
@@ -20,7 +19,7 @@ const Navbar = (): JSX.Element => {
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
           <h1 className={styles.name}>Docketeer</h1>
-          <img style={{paddingLeft: "8px"}} width="45px" height="45px" src={docker2} alt="none" />
+          <img style={{paddingLeft: '8px'}} width="45px" height="45px" src={docker2} alt="none" />
         </div>
         <ul>
           <div onClick={() => displayNav()}>
@@ -99,7 +98,7 @@ const Navbar = (): JSX.Element => {
                 href="https://github.com/open-source-labs/Docketeer"
                 target="_blank"
               >
-                <img
+                <img className={styles.githubLogo}
                   width="23px"
                   height="23px"
                   src={github}
