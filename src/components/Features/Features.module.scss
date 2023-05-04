@@ -58,9 +58,8 @@ h4 {
 }
 
 .article:hover {
-  color: #3a4c7a;
-  text-shadow: .5px .5px rgba(154, 180, 251);
-
+  color: #ff9f00;
+  transition: .3s;
 }
 .article:not(:hover) {
   transition: 0.3s;
