@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import github from '../../assets/github-mark/github-mark-white.png';
 import styles from './Navbar.module.scss';
 import docker from '../../assets/docketeerlogo.png';
+import docker2 from "../../assets/docketeerlogo2.png"
 
 const Navbar = (): JSX.Element => {
   const displayNav = function () {
@@ -19,7 +20,7 @@ const Navbar = (): JSX.Element => {
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
           <h1 className={styles.name}>Docketeer</h1>
-          <img width="40px" height="40px" src={docker} alt="none" />
+          <img style={{paddingLeft: "15px"}} width="60px" height="60px" src={docker2} alt="none" />
         </div>
         <ul>
           <div onClick={() => displayNav()}>
