@@ -20,7 +20,7 @@ const Navbar = (): JSX.Element => {
       <div className={styles.navbarContainer}>
         <div className={styles.left}>
           <h1 className={styles.name}>Docketeer</h1>
-          <img style={{paddingLeft: "15px"}} width="60px" height="60px" src={docker2} alt="none" />
+          <img style={{paddingLeft: "15px"}} width="45px" height="45px" src={docker2} alt="none" />
         </div>
         <ul>
           <div onClick={() => displayNav()}>
