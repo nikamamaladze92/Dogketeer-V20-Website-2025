@@ -2,6 +2,7 @@ import React from 'react';
 import FeatureCard from './FeatureCard';
 import styles from './Features.module.scss';
 import containers from '../../assets/features/containers.svg';
+import network from '../../assets/features/network.svg'
 import images from '../../assets/features/images.svg';
 import kubernetes from '../../assets/features/kubernetes.svg';
 import logs from '../../assets/features/logs.svg';
@@ -31,6 +32,11 @@ const Features = (): JSX.Element => {
       header: 'Container Management',
       img: containers,
       info: 'Create, start, stop, and delete Docker containers all in one place',
+    },
+    {
+      header: 'Network Management',
+      img: network,
+      info: 'add me! Features.tsx line 39',
     },
     {
       header: 'Image Management',
