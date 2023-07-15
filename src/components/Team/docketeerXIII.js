@@ -2,7 +2,7 @@ import adrian from '../../assets/Adrian.jpeg'
 import garrett from '../../assets/Garrett.jpeg'
 import john from '../../assets/John.jpeg'
 import shuai from '../../assets/Shuai.jpeg'
-import gd from '../../assets/gd.jpeg'
+import michael from '../../assets/michael.png'
 const docketeerXIII = [
   {
     img: adrian,
@@ -17,7 +17,7 @@ const docketeerXIII = [
     github: 'https://github.com/garrettallen0',
   },
   {
-    img: gd,
+    img: michael,
     name: 'Michael Liu',
     linkedin: 'https://www.linkedin.com/in/michael-kwon-liu/',
     github: 'https://github.com/KwonJiyongGD',

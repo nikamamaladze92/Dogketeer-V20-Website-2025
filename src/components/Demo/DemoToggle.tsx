@@ -16,7 +16,7 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
     'Observe metrics related to containers as well as your CPU.',
     'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
     'Access process logs right in Docketeer or save them for later.',
-    'Add infos for network, add demo as well! DemoToggle.tsx',
+    'Easily create or remove user-defined networks and attach or detach containers to them.',
   ];
 
   const handleClick = (gifIndex: number) => {

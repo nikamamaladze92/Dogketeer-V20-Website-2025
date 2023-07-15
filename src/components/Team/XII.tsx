@@ -18,7 +18,7 @@ const XII = ({ img, name, linkedin, github, animation }): JSX.Element => {
       <p>{name}</p>
       <a href={github} target="blank">
         <img className={styles.github} src={githubLogo} />
-      </a>{' '}
+      </a>
       <a href={linkedin} target="blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"

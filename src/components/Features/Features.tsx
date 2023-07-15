@@ -36,7 +36,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Network Management',
       img: network,
-      info: 'add me! Features.tsx line 39',
+      info: 'Create or remove user-defined networks and attach or detach containers to the network.',
     },
     {
       header: 'Image Management',
@@ -69,9 +69,9 @@ const Features = (): JSX.Element => {
       info: "Stay logged in thanks to Docketeer's implementation of sessions and cookies",
     },
     {
-      header: 'System Prune',
+      header: 'System Prune / Network Prune',
       img: prune,
-      info: 'Clear up unused images to ensure optimized performance',
+      info: 'Clear up unused images or networks to ensure optimized performance',
     },
   ];
 
@@ -79,15 +79,6 @@ const Features = (): JSX.Element => {
     <div className={styles.featuresContainer} ref={ref}>
       <div className={styles.features}>
         <h1>Features</h1>
-        <a
-          className={styles.article}
-          href="https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This is anchor tag that we can link our Medium article. Do we want to keep xii's meidum article link?
-        </a>
-        <br></br>
         <a
           className={styles.article}
           href="https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f"
