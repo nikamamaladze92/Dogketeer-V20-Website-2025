@@ -18,8 +18,8 @@ const Features = (): JSX.Element => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   const animations = useSprings(
-    8,
-    [0, 150, 300, 450, 600, 750, 900, 1050].map((delay) => ({
+    9,
+    [0, 150, 300, 450, 600, 750, 900, 1050, 1200].map((delay) => ({
       opacity: inView ? 1 : 0,
       transform: inView ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
@@ -79,6 +79,15 @@ const Features = (): JSX.Element => {
     <div className={styles.featuresContainer} ref={ref}>
       <div className={styles.features}>
         <h1>Features</h1>
+        <a
+          className={styles.article}
+          href="https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          This is anchor tag that we can link our Medium article. Do we want to keep xii's meidum article link?
+        </a>
+        <br></br>
         <a
           className={styles.article}
           href="https://medium.com/@jaenixlee/docketeer-xii-now-ready-for-launch-d06e8f26cd0f"

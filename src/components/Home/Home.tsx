@@ -43,7 +43,7 @@ const Home = (): JSX.Element => {
       } ref={homeRef}>
           <div className={styles.left}>
             <div className={styles.description}>
-              <h1 className={styles.mainTitle}>Introducing Docketeer XII</h1>
+              <h1 className={styles.mainTitle}>Introducing Docketeer XIII</h1>
               <p>Docketeer is a developer-friendly application that provides a single interface for both container management & metric visualization, now with the ability to view Kubernetes cluster metrics.</p>
             </div>
             <div className={styles.explore}><Link

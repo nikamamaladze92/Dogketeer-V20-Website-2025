@@ -4,6 +4,7 @@ import AllOthers from './AllOthers';
 import people from './others';
 import styles from './Team.module.scss';
 import osp4 from './osp4';
+import docketeerXIII from './docketeerXIII';
 
 import { useInView } from 'react-intersection-observer';
 import { useSprings, config } from 'react-spring';
@@ -11,6 +12,16 @@ import { useSprings, config } from 'react-spring';
 
 const Team = (): JSX.Element => {
   const [ref, inView] = useInView({ threshold: 0.2 });
+
+  const animationsTwo = useSprings(
+    8,
+    [0, 150, 300, 450, 600].map((delay) => ({
+      opacity: inView ? 1 : 0,
+      transform: inView ? 'translateY(0)' : 'translateY(50px)',
+      config: config.slow,
+      delay: inView ? delay : 0,
+    }))
+  );
 
   const animations = useSprings(
     8,
@@ -24,8 +35,21 @@ const Team = (): JSX.Element => {
 
   return (
     <div className={styles.teamContainer}>
-      <h2>The Team Behind Docketeer XII</h2>
+      <h2>The Team Behind Docketeer XIII</h2>
+      <div className={styles.docketeerXIIIContainer} ref={ref}>
+        {docketeerXIII.map((person, index) => (
+          <XII
+            key={index}
+            img={person.img}
+            name={person.name}
+            linkedin={person.linkedin}
+            github={person.github}
+            animation={animationsTwo[index]}
+          />
+        ))}
+        </div>
       <div className={styles.osp4Container} ref={ref}>
+      <h2>The Team Behind Docketeer XII</h2>
         {osp4.map((person, index) => (
           <XII
             key={index}
