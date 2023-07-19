@@ -62,7 +62,7 @@ const Team = (): JSX.Element => {
           />
         ))}
       </div>
-      <h3>Meet All Our Engineers</h3>
+      <h3>Meet All of Our Engineers!</h3>
       <div className={styles.othersContainer}>
         {people.map((person, index) => (
           <AllOthers

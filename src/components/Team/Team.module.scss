@@ -74,11 +74,13 @@
     align-items: center;
     margin-bottom: 5vh;
     text-align: center;
-    .github {
-      width: 19px;
-      height: 19px;
-      margin-left: 5px;
-    }
+  }
+
+  .github {
+    width: 19px;
+    height: 19px;
+    margin-left: 5px;
+    padding-right: 5px;
   }
 
   .osp4box {
@@ -90,12 +92,7 @@
   .person {
     font-size: 14px;
     margin: 5px;
-  }
-
-  .github {
-    width: 14px;
-    height: 14px;
-    margin-left: 5px;
+    
   }
 
   .osp4Pic {
