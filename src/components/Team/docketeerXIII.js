@@ -1,8 +1,8 @@
-import adrian from '../../assets/Adrian.jpeg'
-import garrett from '../../assets/Garrett.jpeg'
-import john from '../../assets/John.jpeg'
-import shuai from '../../assets/Shuai.jpeg'
-import michael from '../../assets/michael.png'
+import adrian from '../../assets/XIII/Adrian.jpeg'
+import garrett from '../../assets/XIII/Garrett.jpeg'
+import john from '../../assets/XIII/John.jpeg'
+import shuai from '../../assets/XIII/Shuai.jpeg'
+import michael from '../../assets/XIII/Michael.jpeg'
 const docketeerXIII = [
   {
     img: adrian,
@@ -13,7 +13,7 @@ const docketeerXIII = [
   {
     img: garrett,
     name: 'Garrett Allen',
-    linkedin: 'https://www.linkedin.com/in/garrett-allen-185a2964/',
+    linkedin: 'https://www.linkedin.com/in/garrettallen0',
     github: 'https://github.com/garrettallen0',
   },
   {

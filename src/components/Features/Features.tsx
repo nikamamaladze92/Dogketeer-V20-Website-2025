@@ -36,7 +36,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Network Management',
       img: network,
-      info: 'Create or remove user-defined networks and attach or detach containers to the network.',
+      info: ' Advanced network support and intuitive visualization for seamless container networking.',
     },
     {
       header: 'Image Management',
