@@ -64,6 +64,25 @@
     }
   }
 
+  .docketeerXIIIContainer {
+    margin: auto;
+    max-width: 86em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+    text-align: center;
+  }
+
+  .github {
+    width: 19px;
+    height: 19px;
+    margin-left: 5px;
+    padding-right: 5px;
+  }
+
   .osp4box {
     padding-bottom: 2vh;
     margin-bottom: 5vh;
@@ -73,12 +92,7 @@
   .person {
     font-size: 14px;
     margin: 5px;
-  }
-
-  .github {
-    width: 14px;
-    height: 14px;
-    margin-left: 5px;
+    
   }
 
   .osp4Pic {

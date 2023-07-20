@@ -5,13 +5,14 @@ import images from '../../assets/images-demo.gif';
 import containerMetrics from '../../assets/containermetrics-demo.gif';
 import k8sMetrics from '../../assets/k8smetrics-demo.gif';
 import logs from '../../assets/logs-demo.gif';
+import network from '../../assets/network-demo.gif';
 
 interface DemoGifProps {
   currentGif: number;
 }
 
 const DemoImage: React.FC<DemoGifProps> = ({ currentGif }): JSX.Element => {
-  const gifs = [containers, images, containerMetrics, k8sMetrics, logs];
+  const gifs = [containers, images, containerMetrics, k8sMetrics, logs, network];
 
   return (
     <div className={styles.gifContainer}>

@@ -21,11 +21,16 @@
   margin-top: 5vh;
   margin-bottom: 5vh;
   padding-top: 10vh;
+  padding-bottom: 10vh;
   height: 100vh;
 
   .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .featureCards {
-      max-width: 1200px;
+      align-self: center;
+      max-width: 900px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;

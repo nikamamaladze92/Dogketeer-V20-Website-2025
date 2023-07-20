@@ -1,6 +1,6 @@
 .demoDisplayLoaded {
   height: 70vh;
-  padding-top: 12vh;
+  padding-top: 20vh;
   max-width: 84em;
   margin: 25px auto;
   display: flex;
@@ -13,6 +13,7 @@
 .demoDisplay {
   opacity: 0;
   width: 20%;
+  // padding-top: 10rem;
   transition: opacity 0.5s ease-out;
 }
 .demoContainer {

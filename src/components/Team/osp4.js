@@ -1,7 +1,7 @@
-import anna from '../../assets/anna.png';
-import jaeni from '../../assets/jaeni.jpeg';
-import emily from '../../assets/emily.jpeg';
-import jay from '../../assets/jay.jpg';
+import anna from '../../assets/XII/anna.png';
+import jaeni from '../../assets/XII/jaeni.jpeg';
+import emily from '../../assets/XII/emily.jpeg';
+import jay from '../../assets/XII/jay.jpg';
 
 const osp4 = [
   {
