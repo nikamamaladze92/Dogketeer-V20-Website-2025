@@ -36,7 +36,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Network Management',
       img: network,
-      info: ' Advanced network support and intuitive visualization for seamless container networking.',
+      info: 'Network support and intuitive visualization for seamless container networking.',
     },
     {
       header: 'Image Management',
@@ -69,7 +69,7 @@ const Features = (): JSX.Element => {
       info: "Stay logged in thanks to Docketeer's implementation of sessions and cookies",
     },
     {
-      header: 'System Prune / Network Prune',
+      header: 'System Prune',
       img: prune,
       info: 'Clear up unused images or networks to ensure optimized performance',
     },
