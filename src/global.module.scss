@@ -17,6 +17,7 @@ body {
   position: relative;
   z-index: 1;
   width: min-content;
+  padding-bottom: 5rem;
 }
 
 canvas {
@@ -32,3 +33,7 @@ h3 {
   font-family: 'Prompt';
   padding: 0 3vh;
 }
+
+// footer {
+//   margin-bottom: 3rem;
+// }

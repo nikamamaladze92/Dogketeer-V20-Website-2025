@@ -80,9 +80,20 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
   .homeLoaded {
     margin-top: 10vh;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    .mainTitle {
+      width: 90%;
+    }
   }
 }
