@@ -11,16 +11,16 @@ import styles from '../Demo.module.scss';
 const Mobile = (): JSX.Element => {
   const gifs = [
     { name: 'Containers', url: containers },
+    { name: 'Networks', url: networks },
     { name: 'Images', url: images },
     { name: 'Container Metrics', url: containerMetrics },
     { name: 'Cluster Metrics', url: k8sMetrics },
-    { name: 'Process Logs', url: logs },
-    { name: 'Networks', url: networks }
+    { name: 'Process Logs', url: logs }
   ];
 
-  const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'View, run, remove, or search for images with ease.',
+  const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'Easily create or remove user-defined networks and attach or detach containers to them.','View, run, remove, or search for images with ease.',
     'Observe metrics related to containers as well as your CPU.', 'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
-    'Access process logs right in Docketeer or save them for later.', 'Easily create or remove user-defined networks and attach or detach containers to them.'];
+    'Access process logs right in Docketeer or save them for later.'];
 
   const [currGif, setGif] = useState(0);
   const handleClick = (direction: string) => {

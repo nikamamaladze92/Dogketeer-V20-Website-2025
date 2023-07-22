@@ -12,11 +12,11 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
 }): JSX.Element => {
   const descriptions = [
     'Start, stop, or remove your containers at the click of a button.',
+    'Easily create or remove user-defined networks and attach or detach containers to them.',
     'View, run, remove, or search for images with ease.',
     'Observe metrics related to containers as well as your CPU.',
     'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
     'Access process logs right in Docketeer or save them for later.',
-    'Easily create or remove user-defined networks and attach or detach containers to them.',
   ];
 
   const handleClick = (gifIndex: number) => {
@@ -30,19 +30,19 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
         <div className={styles.toggle} onClick={() => handleClick(0)}>
           Containers
         </div>
-        <div className={styles.toggle} onClick={() => handleClick(5)}>
+        <div className={styles.toggle} onClick={() => handleClick(1)}>
           Networks
         </div>
-        <div className={styles.toggle} onClick={() => handleClick(1)}>
+        <div className={styles.toggle} onClick={() => handleClick(2)}>
           Images
         </div>
-        <div className={styles.toggle} onClick={() => handleClick(2)}>
+        <div className={styles.toggle} onClick={() => handleClick(3)}>
           Container Metrics
         </div>
-        <div className={styles.toggle} onClick={() => handleClick(3)}>
+        <div className={styles.toggle} onClick={() => handleClick(4)}>
           Cluster Metrics
         </div>
-        <div className={styles.toggle} onClick={() => handleClick(4)}>
+        <div className={styles.toggle} onClick={() => handleClick(5)}>
           Process Logs
         </div>
       </div>

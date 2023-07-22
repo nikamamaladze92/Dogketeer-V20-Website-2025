@@ -12,7 +12,7 @@ interface DemoGifProps {
 }
 
 const DemoImage: React.FC<DemoGifProps> = ({ currentGif }): JSX.Element => {
-  const gifs = [containers, images, containerMetrics, k8sMetrics, logs, network];
+  const gifs = [containers, network, images, containerMetrics, k8sMetrics, logs];
 
   return (
     <div className={styles.gifContainer}>
