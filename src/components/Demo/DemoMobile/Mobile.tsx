@@ -5,6 +5,7 @@ import images from '../../../assets/images-demo.gif';
 import containerMetrics from '../../../assets/containermetrics-demo.gif';
 import k8sMetrics from '../../../assets/k8smetrics-demo.gif';
 import logs from '../../../assets/logs-demo.gif';
+import networks from '../../../assets/network-demo.gif';
 import styles from '../Demo.module.scss';
 
 const Mobile = (): JSX.Element => {
@@ -14,16 +15,17 @@ const Mobile = (): JSX.Element => {
     { name: 'Container Metrics', url: containerMetrics },
     { name: 'Cluster Metrics', url: k8sMetrics },
     { name: 'Process Logs', url: logs },
+    { name: 'Networks', url: networks }
   ];
 
   const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'View, run, remove, or search for images with ease.',
     'Observe metrics related to containers as well as your CPU.', 'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
-    'Access process logs right in Docketeer or save them for later.'];
+    'Access process logs right in Docketeer or save them for later.', 'Easily create or remove user-defined networks and attach or detach containers to them.'];
 
   const [currGif, setGif] = useState(0);
   const handleClick = (direction: string) => {
     if (direction === 'right') {
-      if (currGif === 4) {
+      if (currGif === 5) {
         return setGif(0);
       } else {
         const change = currGif + 1;
@@ -31,7 +33,7 @@ const Mobile = (): JSX.Element => {
       }
     } else {
       if (currGif === 0) {
-        return setGif(4);
+        return setGif(5);
       } else {
         const change = currGif - 1;
         return setGif(change);
