@@ -1,5 +1,25 @@
 const people = [
   {
+    name: 'Anna Tran',
+    linkedin: 'https://www.linkedin.com/in/annatran10/',
+    github: 'https://github.com/annamullike',
+  },
+  {
+    name: 'Emily Johl',
+    linkedin: 'https://www.linkedin.com/in/emily-johl-5093ab137/',
+    github: 'https://github.com/emilyjohl',
+  },
+  {
+    name: 'Jaeni Lee',
+    linkedin: 'https://www.linkedin.com/in/jaenilee/',
+    github: 'https://github.com/jaenixlee',
+  },
+  {
+    name: 'Joseph Salgado',
+    linkedin: 'https://www.linkedin.com/in/joseph-salgado-76410620b/',
+    github: 'https://github.com/Jaysalgado',
+  },
+  {
     name: 'Michael Angelo Garcia',
     linkedin: 'https://www.linkedin.com/in/michael-angelo-garcia-053848265/',
     github: 'https://github.com/MichaelAngelo13',

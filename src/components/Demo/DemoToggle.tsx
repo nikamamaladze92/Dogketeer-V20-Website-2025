@@ -15,7 +15,7 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
     'Easily create or remove user-defined networks and attach or detach containers to them.',
     'View, run, remove, or search for images with ease.',
     'Observe metrics related to containers as well as your CPU.',
-    'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
+    'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets. (Docketeer web v13)',
     'Access process logs right in Docketeer or save them for later.',
   ];
 

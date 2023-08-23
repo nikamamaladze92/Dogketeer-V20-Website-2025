@@ -3,8 +3,8 @@ import XII from './XII';
 import AllOthers from './AllOthers';
 import people from './others';
 import styles from './Team.module.scss';
-import osp4 from './osp4';
-import docketeerXIII from './docketeerXIII';
+import osp5 from './osp5';
+import docketeerXIV from './docketeerXIV';
 
 import { useInView } from 'react-intersection-observer';
 import { useSprings, config } from 'react-spring';
@@ -36,9 +36,9 @@ const Team = (): JSX.Element => {
 
   return (
     <div className={styles.teamContainer}>
-      <h2>The Team Behind Docketeer XIII</h2>
+      <h2>The Team Behind Docketeer XIV</h2>
       <div className={styles.docketeerXIIIContainer} ref={refXIII}>
-        {docketeerXIII.map((person, index) => (
+        {docketeerXIV.map((person, index) => (
           <XII
             key={index}
             img={person.img}
@@ -49,9 +49,9 @@ const Team = (): JSX.Element => {
           />
         ))}
         </div>
-        <h2>The Team Behind Docketeer XII</h2>
+        <h2>The Team Behind Docketeer XIII</h2>
       <div className={styles.osp4Container} ref={ref}>
-        {osp4.map((person, index) => (
+        {osp5.map((person, index) => (
           <XII 
             key={index}
             img={person.img}

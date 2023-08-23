@@ -43,7 +43,7 @@ const Home = (): JSX.Element => {
       } ref={homeRef}>
           <div className={styles.left}>
             <div className={styles.description}>
-              <h1 className={styles.mainTitle}>Introducing Docketeer XIII</h1>
+              <h1 className={styles.mainTitle}>Introducing Docketeer XIV</h1>
               <p>Docketeer is a user-friendly application with an intuitive interface for container management, with visualization tools for your containers and Kubernetes clusters. The latest update introduces advanced network support, allowing effortless creation, and connection of containers to user-defined networks. The new network-to-container relationship visualization also provides an intuitive view of network status.</p>
             </div>
             <div className={styles.explore}><Link

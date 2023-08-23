@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 // import styles from './Demo.module.scss';
 import containers from '../../../assets/containers-demo.gif';
 import images from '../../../assets/images-demo.gif';
-import containerMetrics from '../../../assets/containermetrics-demo.gif';
+import containerMetrics from '../../../assets/metrics-demo.gif';
 import k8sMetrics from '../../../assets/k8smetrics-demo.gif';
 import logs from '../../../assets/logs-demo.gif';
-import networks from '../../../assets/network-demo.gif';
+import networks from '../../../assets/networks-demo.gif';
 import styles from '../Demo.module.scss';
 
 const Mobile = (): JSX.Element => {
