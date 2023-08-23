@@ -51,7 +51,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Cluster Metrics',
       img: kubernetes,
-      info: 'Access metrics related to Kubernetes clusters with just the toggle of a button',
+      info: 'Access metrics related to Kubernetes clusters with just the toggle of a button (browser only)',
     },
     {
       header: 'Detailed Process Logs',
@@ -81,7 +81,7 @@ const Features = (): JSX.Element => {
         <h1>Features</h1>
         <a
           className={styles.article}
-          href="https://medium.com/@michael_kwon_liu/docketeer-a-tool-for-docker-273793014eb0"
+          href="https://medium.com/@grantschussler/docketeer-xiv-coming-home-6eb011990a34"
           target="_blank"
           rel="noopener noreferrer"
         >
