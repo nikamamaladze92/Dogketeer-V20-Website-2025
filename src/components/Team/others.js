@@ -40,6 +40,26 @@ const people = [
     github: 'https://github.com/saadh123',
   },
   {
+    name: 'Edward Kenny',
+    linkedin: 'https://www.linkedin.com/in/edward-kenny-8949b8136/',
+    github: 'https://github.com/EdwardKenny',
+  },
+  {
+    name: 'Alex Schmidt',
+    linkedin: 'https://www.linkedin.com/in/alex-schmidt-44b27413b/',
+    github: 'https://github.com/redafroninja',
+  },
+  {
+    name: 'Dillon Patel',
+    linkedin: 'https://www.linkedin.com/in/d-hp',
+    github: 'https://github.com/d-hp',
+  },
+  {
+    name: 'Kennan Budnik',
+    linkedin: 'https://www.linkedin.com/in/kobudnik/',
+    github: 'https://github.com/kobudnik',
+  },
+  {
     name: 'Garima Bhatia',
     linkedin: 'https://www.linkedin.com/in/GarimaB06/',
     github: 'https://github.com/garimab06',
