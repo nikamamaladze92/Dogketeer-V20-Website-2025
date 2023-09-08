@@ -46,7 +46,7 @@ const people = [
   },
   {
     name: 'Alex Schmidt',
-    linkedin: 'https://www.linkedin.com/in/alex-schmidt-44b27413b/',
+    linkedin: 'https://www.linkedin.com/in/alex-schmidt1/',
     github: 'https://github.com/redafroninja',
   },
   {
