@@ -1,5 +1,30 @@
 const people = [
   {
+    name: 'Adrian Kormier',
+    linkedin: 'https://www.linkedin.com/in/adrian-kormier/',
+    github: 'https://github.com/adriankormier',
+  },
+  {
+    name: 'Garrett Allen',
+    linkedin: 'https://www.linkedin.com/in/garrettallen0',
+    github: 'https://github.com/garrettallen0',
+  },
+  {
+    name: 'Michael Liu',
+    linkedin: 'https://www.linkedin.com/in/michael-kwon-liu/',
+    github: 'https://github.com/KwonJiyongGD',
+  },
+  {
+    name: 'Shuai Shao',
+    linkedin: 'https://www.linkedin.com/in/shuai-sh/',
+    github: 'https://github.com/shao-shuai',
+  },
+  {
+    name: 'John Jong Oun Kim',
+    linkedin: 'https://www.linkedin.com/in/john-jong-oun-kim-01b4a3246/',
+    github: 'https://github.com/jayoo0621',
+  },
+  {
     name: 'Anna Tran',
     linkedin: 'https://www.linkedin.com/in/annatran10/',
     github: 'https://github.com/annamullike',

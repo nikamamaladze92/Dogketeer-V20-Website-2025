@@ -1,8 +1,9 @@
-import grant from '../../assets/XIV/Grant.jpeg'
-import keester from '../../assets/XIV/Keester.jpeg'
-import krause from '../../assets/XIV/Krause.jpeg'
-import jacob from '../../assets/XIV/jacob-melendez.jpeg'
-const docketeerXIV = [
+import grant from '../../assets/XIV/Grant.jpeg';
+import keester from '../../assets/XIV/Keester.jpeg';
+import krause from '../../assets/XIV/Krause.jpeg';
+import jacob from '../../assets/XIV/jacob-melendez.jpeg';
+
+const prevOSP = [
   {
     img: jacob,
     name: 'Jacob Melendez',
@@ -29,4 +30,4 @@ const docketeerXIV = [
   },
 ];
 
-export default docketeerXIV;
+export default prevOSP;

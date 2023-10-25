@@ -15,8 +15,8 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
     'Easily create or remove user-defined networks and attach or detach containers to them.',
     'View, run, remove, or search for images with ease.',
     'Observe metrics related to containers as well as your CPU.',
-    'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets. (browser only)',
-    'Access process logs right in Docketeer or save them for later.',
+    'View Kubernetes cluster metrics for nodes and kubelets.',
+    'Access and search process logs right in Docketeer or save them for later.',
   ];
 
   const handleClick = (gifIndex: number) => {
