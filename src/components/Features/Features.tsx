@@ -2,7 +2,7 @@ import React from 'react';
 import FeatureCard from './FeatureCard';
 import styles from './Features.module.scss';
 import containers from '../../assets/features/containers.svg';
-import network from '../../assets/features/network.svg'
+import network from '../../assets/features/network.svg';
 import images from '../../assets/features/images.svg';
 import kubernetes from '../../assets/features/kubernetes.svg';
 import logs from '../../assets/features/logs.svg';
@@ -19,12 +19,12 @@ const Features = (): JSX.Element => {
 
   const animations = useSprings(
     9,
-    [0, 150, 300, 450, 600, 750, 900, 1050, 1200].map((delay) => ({
+    [0, 150, 300, 450, 600, 750, 900, 1050, 1200].map(delay => ({
       opacity: inView ? 1 : 0,
       transform: inView ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
       delay: inView ? delay : 0,
-    }))
+    })),
   );
 
   const featureData = [
@@ -49,24 +49,14 @@ const Features = (): JSX.Element => {
       info: 'Access metrics related to containers in a dashboard with rich visualizations',
     },
     {
-      header: 'Cluster Metrics',
+      header: 'Cluster Metrics and Configuration',
       img: kubernetes,
-      info: 'Access metrics related to Kubernetes clusters with just the toggle of a button (browser only)',
+      info: 'Access metrics related to Kubernetes clusters with new dashboards and configure endpoints for new endpoints (Alpha)',
     },
     {
       header: 'Detailed Process Logs',
       img: logs,
-      info: 'View and download process logs related to containers',
-    },
-    {
-      header: 'Secure Authentication',
-      img: security,
-      info: "Maintain trust in Docketeer's encryption and hashing methods",
-    },
-    {
-      header: 'Sessions',
-      img: cookie,
-      info: "Stay logged in thanks to Docketeer's implementation of sessions and cookies",
+      info: 'View, search and download process logs related to containers',
     },
     {
       header: 'System Prune',
@@ -81,10 +71,9 @@ const Features = (): JSX.Element => {
         <h1>Features</h1>
         <a
           className={styles.article}
-          href="https://medium.com/@grantschussler/docketeer-xiv-coming-home-6eb011990a34"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          href='https://medium.com/@christiandoescoding/navigating-the-seas-of-docker-with-docketeer-v15-0-ad5bd9540d14'
+          target='_blank'
+          rel='noopener noreferrer'>
           Read about us on Medium!
         </a>
         <div className={styles.featureCards}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import styles from './Home.module.scss';
-import docker from '../../assets/docketeerlogo.png'
+import docker from '../../assets/docketeerlogo.png';
 import { Link } from 'react-scroll';
 
 const Home = (): JSX.Element => {
@@ -20,7 +20,7 @@ const Home = (): JSX.Element => {
           setIsIntersecting(false);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     const currentRef = homeRef.current;
@@ -33,35 +33,47 @@ const Home = (): JSX.Element => {
       if (currentRef) {
         observer.unobserve(currentRef);
       }
-    }; 
+    };
   }, []);
 
   return (
-        <div className={isLoaded && isIntersecting
-          ? styles.homeLoaded
-          : styles.homeDisplay
-      } ref={homeRef}>
-          <div className={styles.left}>
-            <div className={styles.description}>
-              <h1 className={styles.mainTitle}>Introducing Docketeer XIV</h1>
-              <p>Docketeer is a user-friendly application with an intuitive interface for container management, with visualization tools for your containers and Kubernetes clusters. The latest update introduces advanced network support, allowing effortless creation, and connection of containers to user-defined networks. The new network-to-container relationship visualization also provides an intuitive view of network status.</p>
-            </div>
-            <div className={styles.explore}><Link
-              to='features'
-              smooth={true}
-              hashSpy={true}
-              spy={true}
-              duration={600}
-            >
-              Start Exploring
-            </Link></div>
-          </div>
-          <div className={styles.right}>
-            <img width='300px' height='auto' src={docker} alt="docketeer_img" />
-          </div>
+    <div
+      className={
+        isLoaded && isIntersecting ? styles.homeLoaded : styles.homeDisplay
+      }
+      ref={homeRef}>
+      <div className={styles.left}>
+        <div className={styles.description}>
+          <h1 className={styles.mainTitle}>Introducing Docketeer XV</h1>
+          <p>
+            Docketeer is a user-friendly application with an intuitive interface
+            for container management, with visualization tools for your
+            containers and Kubernetes clusters. The latest update elaborated on
+            the Docker Desktop Extension release of Docketeer, bringing new
+            container and Kubernetes metrics dashboards to the health monitoring
+            pages. This new release also comes with a more intuitive process
+            logs page to search through your container logs, pragination on the
+            containers home page, and an alpha release of the configurations tab
+            where you can configure endpoints for Prometheus to scrap your
+            Kubernetes clusters!
+          </p>
         </div>
+        <div className={styles.explore}>
+          <Link
+            to='features'
+            smooth={true}
+            hashSpy={true}
+            spy={true}
+            duration={600}>
+            Start Exploring
+          </Link>
+        </div>
+      </div>
+      <div className={styles.right}>
+        <img width='300px' height='auto' src={docker} alt='docketeer_img' />
+      </div>
+    </div>
   );
-}
+};
 
 export default Home;
-
