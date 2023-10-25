@@ -10,6 +10,7 @@ import metrics from '../../assets/features/metrics.svg';
 import cookie from '../../assets/features/cookie.svg';
 import security from '../../assets/features/security.svg';
 import prune from '../../assets/features/prune.svg';
+import configurations from '../../assets/features/configurations.svg';
 
 import { useInView } from 'react-intersection-observer';
 import { useSprings, config } from 'react-spring';
@@ -41,7 +42,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Image Management',
       img: images,
-      info: 'Easily view, run, remove, and search for Docker images',
+      info: 'Easily view, run, and remove, for Docker images',
     },
     {
       header: 'Container Metrics',
@@ -49,9 +50,9 @@ const Features = (): JSX.Element => {
       info: 'Access metrics related to containers in a dashboard with rich visualizations',
     },
     {
-      header: 'Cluster Metrics and Configuration',
+      header: 'Cluster Metrics',
       img: kubernetes,
-      info: 'Access metrics related to Kubernetes clusters with new dashboards and configure endpoints for new endpoints (Alpha)',
+      info: 'Access metrics related to Kubernetes clusters in a dashboard with rich visualizations',
     },
     {
       header: 'Detailed Process Logs',
@@ -62,6 +63,11 @@ const Features = (): JSX.Element => {
       header: 'System Prune',
       img: prune,
       info: 'Clear up unused images or networks to ensure optimized performance',
+    },
+    {
+      header: 'Endpoint Configuration (Alpha)',
+      img: configurations,
+      info: 'Configure Kubernetes and Docker endpoints for new endpoints to scrape for data',
     },
   ];
 

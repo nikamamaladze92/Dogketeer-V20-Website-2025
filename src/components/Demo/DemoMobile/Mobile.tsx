@@ -15,12 +15,17 @@ const Mobile = (): JSX.Element => {
     { name: 'Images', url: images },
     { name: 'Container Metrics', url: containerMetrics },
     { name: 'Cluster Metrics', url: k8sMetrics },
-    { name: 'Process Logs', url: logs }
+    { name: 'Process Logs', url: logs },
   ];
 
-  const descriptions = ['Start, stop, or remove your containers at the click of a button.', 'Easily create or remove user-defined networks and attach or detach containers to them.','View, run, remove, or search for images with ease.',
-    'Observe metrics related to containers as well as your CPU.', 'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
-    'Access process logs right in Docketeer or save them for later.'];
+  const descriptions = [
+    'Start, stop, or remove your containers at the click of a button.',
+    'Easily create or remove user-defined networks and attach or detach containers to them.',
+    'View, run, or remove images with ease.',
+    'Observe metrics related to containers as well as your CPU.',
+    'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
+    'Access process logs right in Docketeer or save them for later.',
+  ];
 
   const [currGif, setGif] = useState(0);
   const handleClick = (direction: string) => {
@@ -48,14 +53,12 @@ const Mobile = (): JSX.Element => {
       <div className={styles.gifMobileButtonsBox}>
         <div
           className={styles.gifMobileButtons}
-          onClick={() => handleClick('')}
-        >
+          onClick={() => handleClick('')}>
           &larr;
         </div>
         <div
           className={styles.gifMobileButtons}
-          onClick={() => handleClick('right')}
-        >
+          onClick={() => handleClick('right')}>
           &rarr;
         </div>
       </div>
