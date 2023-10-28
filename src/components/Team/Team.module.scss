@@ -92,10 +92,11 @@
   .person {
     font-size: 14px;
     margin: 5px;
-    
   }
 
   .osp4Pic {
+    object-fit: cover;
+    height: 200px;
     width: 200px;
   }
 

@@ -1,6 +1,6 @@
-import Jonathan from '../../assets/XV/Cristian.jpg';
-import Josh from '../../assets/XV/Cristian.jpg';
-import Christian from '../../assets/XV/Cristian.jpg';
+import Jonathan from '../../assets/XV/Jonathan.jpg';
+import Josh from '../../assets/XV/Josh.png';
+import Christian from '../../assets/XV/Christian.jpeg';
 import Cristian from '../../assets/XV/Cristian.jpg';
 const currDocketeerTeam = [
   {
