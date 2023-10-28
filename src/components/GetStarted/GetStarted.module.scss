@@ -15,16 +15,20 @@
 .githubLink:visited {
   color: white;
 }
-
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
 .githubButton {
   background: transparent;
   box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.782);
   color: white;
-  width: 100px;
+  width: 125px;
   height: 20px;
   padding: 10px;
   border-radius: 20px;
   line-height: 20px;
+  margin: 0px 2% 0px 2%;
 }
 
 .logo {
