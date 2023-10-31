@@ -6,7 +6,7 @@ const currDocketeerTeam = [
   {
     img: Jonathan,
     name: 'Jonathan Gray',
-    linkedin: 'https://www.linkedin.com/in/jonathan-gray-987169183/',
+    linkedin: 'https://www.linkedin.com/in/jonathan-lee-gray',
     github: 'https://github.com/thejohnny5',
   },
   {
