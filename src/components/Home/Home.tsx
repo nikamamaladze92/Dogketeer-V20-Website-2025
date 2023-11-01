@@ -52,9 +52,9 @@ const Home = (): JSX.Element => {
             the Docker Desktop Extension release of Docketeer, bringing new
             container and Kubernetes metrics dashboards to the health monitoring
             pages, a more intuitive process logs page to search through your
-            container logs, pragination on the containers home page, and an
+            container logs, pagination on the containers home page, and an
             alpha release of the configurations tab where you can configure
-            endpoints for Prometheus to scrap your Kubernetes clusters.
+            endpoints for Prometheus to scrape your Kubernetes clusters.
           </p>
         </div>
         <div className={styles.explore}>
