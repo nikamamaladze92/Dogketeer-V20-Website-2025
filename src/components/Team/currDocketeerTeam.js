@@ -12,7 +12,7 @@ const currDocketeerTeam = [
   {
     img: Cristian,
     name: 'Cristian Morales',
-    linkedin: 'www.linkedin.com/in/cris-morales',
+    linkedin: 'https://www.linkedin.com/in/cris-morales',
     github: 'https://github.com/Cris-Morales',
   },
   {

@@ -37,12 +37,12 @@ const Features = (): JSX.Element => {
     {
       header: 'Network Management',
       img: network,
-      info: 'Network support and intuitive visualization for seamless container networking.',
+      info: 'Network support and intuitive visualization for seamless container networking',
     },
     {
       header: 'Image Management',
       img: images,
-      info: 'Easily view, run, and remove, for Docker images',
+      info: 'Easily view, run, and remove Docker images',
     },
     {
       header: 'Container Metrics',
@@ -67,7 +67,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Endpoint Configuration (Alpha)',
       img: configurations,
-      info: 'Configure Kubernetes and Docker endpoints for new endpoints to scrape for data',
+      info: 'Configure Kubernetes and Docker endpoint specification to scrape for data',
     },
   ];
 
