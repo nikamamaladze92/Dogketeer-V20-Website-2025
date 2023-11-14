@@ -14,7 +14,8 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
     'Start, stop, or remove your containers at the click of a button.',
     'Easily create or remove user-defined networks and attach or detach containers to them.',
     'View, run, or remove images with ease.',
-    'Observe metrics related to containers as well as your CPU.',
+    'Observe and save metrics related to containers as well as your CPU.',
+    'View and compare previously captured container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',
     'Access and search process logs right in Docketeer or save them for later.',
   ];
@@ -40,9 +41,12 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
           Container Metrics
         </div>
         <div className={styles.toggle} onClick={() => handleClick(4)}>
-          Cluster Metrics
+          Snapshots
         </div>
         <div className={styles.toggle} onClick={() => handleClick(5)}>
+          Cluster Metrics
+        </div>
+        <div className={styles.toggle} onClick={() => handleClick(6)}>
           Process Logs
         </div>
       </div>
