@@ -1,32 +1,32 @@
-import grant from '../../assets/XIV/Grant.jpeg';
-import keester from '../../assets/XIV/Keester.jpeg';
-import krause from '../../assets/XIV/Krause.jpeg';
-import jacob from '../../assets/XIV/jacob-melendez.jpeg';
+import Jonathan from '../../assets/XV/Jonathan.jpg';
+import Josh from '../../assets/XV/Josh.png';
+import Christian from '../../assets/XV/Christian.jpeg';
+import Cristian from '../../assets/XV/Cristian.jpg';
 
 const prevOSP = [
   {
-    img: jacob,
-    name: 'Jacob Melendez',
-    linkedin: 'https://www.linkedin.com/in/jacob-melendez/',
-    github: 'https://github.com/JacobAMelendez',
+    img: Jonathan,
+    name: 'Jonathan Gray',
+    linkedin: 'https://www.linkedin.com/in/jonathan-lee-gray',
+    github: 'https://github.com/thejohnny5',
   },
   {
-    img: keester,
-    name: 'Tristan Keester',
-    linkedin: 'https://www.linkedin.com/in/tristan-keester/',
-    github: 'https://github.com/Ronagens',
+    img: Cristian,
+    name: 'Cristian Morales',
+    linkedin: 'https://www.linkedin.com/in/cris-morales',
+    github: 'https://github.com/Cris-Morales',
   },
   {
-    img: krause,
-    name: 'Tristan Krause',
-    linkedin: 'https://www.linkedin.com/in/krausetristan',
-    github: 'https://github.com/tristanyukio',
+    img: Josh,
+    name: 'Josh Nelson',
+    linkedin: 'https://www.linkedin.com/in/josh-nelson-7aba19284/',
+    github: 'https://github.com/JoshNelson98',
   },
   {
-    img: grant,
-    name: 'Grant Schussler',
-    linkedin: 'https://www.linkedin.com/in/grant-schussler',
-    github: 'https://github.com/gschussler',
+    img: Christian,
+    name: 'Christian Lyon',
+    linkedin: 'https://www.linkedin.com/in/christiandoescoding',
+    github: 'https://github.com/christianDoesCoding',
   },
 ];
 

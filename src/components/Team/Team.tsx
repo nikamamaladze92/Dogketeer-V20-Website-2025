@@ -15,27 +15,27 @@ const Team = (): JSX.Element => {
 
   const animationsTwo = useSprings(
     8,
-    [0, 150, 300, 450, 600].map(delay => ({
+    [0, 150, 300, 450, 600].map((delay) => ({
       opacity: inViewXIII ? 1 : 0,
       transform: inViewXIII ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
       delay: inViewXIII ? delay : 0,
-    })),
+    }))
   );
 
   const animations = useSprings(
     8,
-    [0, 150, 300, 450].map(delay => ({
+    [0, 150, 300, 450].map((delay) => ({
       opacity: inView ? 1 : 0,
       transform: inView ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
       delay: inView ? delay : 0,
-    })),
+    }))
   );
 
   return (
     <div className={styles.teamContainer}>
-      <h2>The Team Behind Docketeer XV</h2>
+      <h2>The Team Behind Docketeer XVI</h2>
       <div className={styles.docketeerXIIIContainer} ref={refXIII}>
         {currDocketeerTeam.map((person, index) => (
           <XII
@@ -48,7 +48,7 @@ const Team = (): JSX.Element => {
           />
         ))}
       </div>
-      <h2>The Team Behind Docketeer XIV</h2>
+      <h2>The Team Behind Docketeer XV</h2>
       <div className={styles.osp4Container} ref={ref}>
         {prevOSP.map((person, index) => (
           <XII
