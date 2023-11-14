@@ -11,6 +11,7 @@ import cookie from '../../assets/features/cookie.svg';
 import security from '../../assets/features/security.svg';
 import prune from '../../assets/features/prune.svg';
 import configurations from '../../assets/features/configurations.svg';
+import snapshot from '../../assets/features/snapshot.svg';
 
 import { useInView } from 'react-intersection-observer';
 import { useSprings, config } from 'react-spring';
@@ -20,12 +21,12 @@ const Features = (): JSX.Element => {
 
   const animations = useSprings(
     9,
-    [0, 150, 300, 450, 600, 750, 900, 1050, 1200].map(delay => ({
+    [0, 150, 300, 450, 600, 750, 900, 1050, 1200].map((delay) => ({
       opacity: inView ? 1 : 0,
       transform: inView ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
       delay: inView ? delay : 0,
-    })),
+    }))
   );
 
   const featureData = [
@@ -47,7 +48,12 @@ const Features = (): JSX.Element => {
     {
       header: 'Container Metrics',
       img: metrics,
-      info: 'Access metrics related to containers in a dashboard with rich visualizations',
+      info: 'Access and save metrics related to containers in a dashboard with rich visualizations',
+    },
+    {
+      header: 'Snapshots',
+      img: snapshot,
+      info: 'View and compare previously captured container metrics',
     },
     {
       header: 'Cluster Metrics',
@@ -77,9 +83,11 @@ const Features = (): JSX.Element => {
         <h1>Features</h1>
         <a
           className={styles.article}
-          href='https://medium.com/@christiandoescoding/navigating-the-seas-of-docker-with-docketeer-v15-0-ad5bd9540d14'
-          target='_blank'
-          rel='noopener noreferrer'>
+          // update href to current medium article
+          href="https://medium.com/@christiandoescoding/navigating-the-seas-of-docker-with-docketeer-v15-0-ad5bd9540d14"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Read about us on Medium!
         </a>
         <div className={styles.featureCards}>
