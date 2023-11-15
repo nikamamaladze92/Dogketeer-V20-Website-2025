@@ -44,17 +44,19 @@ const Home = (): JSX.Element => {
       ref={homeRef}>
       <div className={styles.left}>
         <div className={styles.description}>
-          <h1 className={styles.mainTitle}>Introducing Docketeer XV</h1>
+          <h1 className={styles.mainTitle}>Introducing Docketeer XVI</h1>
           <p>
             Docketeer is a user-friendly application with an intuitive interface
             for container management, with visualization tools for your
-            containers and Kubernetes clusters. The latest update elaborated on
-            the Docker Desktop Extension release of Docketeer, bringing new
-            container and Kubernetes metrics dashboards to the health monitoring
-            pages, a more intuitive process logs page to search through your
-            container logs, pagination on the containers home page, and an
-            alpha release of the configurations tab where you can configure
-            endpoints for Prometheus to scrape your Kubernetes clusters.
+            containers and Kubernetes clusters. The Docker Desktop Extension has
+            container and Kubernetes metrics dashboards for health monitoring,
+            an intuitive process logs page to search through your container
+            logs, pagination on the containers home page, and an alpha release
+            of the configurations tab where you can configure endpoints for
+            Prometheus to scrape your Kubernetes clusters. The latest update
+            elaborated on the Docker Desktop Extension release of Docketeer,
+            bringing the capability to capture snapshots of your container
+            metrics to compare previously saved health metrics.
           </p>
         </div>
         <div className={styles.explore}>
