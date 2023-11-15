@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 // import styles from './Demo.module.scss';
-import containers from '../../../assets/containers-demo.gif';
-import images from '../../../assets/images-demo.gif';
-import containerMetrics from '../../../assets/metrics-demo.gif';
-import k8sMetrics from '../../../assets/k8smetrics-demo.gif';
-import logs from '../../../assets/logs-demo.gif';
-import networks from '../../../assets/networks-demo.gif';
+import containers from '../../../assets/demos/containers-demo.gif';
+import images from '../../../assets/demos/images-demo.gif';
+import containerMetrics from '../../../assets/demos/containermetrics-demo.gif';
+import k8sMetrics from '../../../assets/demos/k8smetrics-demo.gif';
+import logs from '../../../assets/demos/logs-demo.gif';
+import networks from '../../../assets/demos/networks-demo.gif';
+import snapshots from '../../../assets/demos/snapshots-demo.gif';
+
 import styles from '../Demo.module.scss';
 
 const Mobile = (): JSX.Element => {
@@ -14,6 +16,7 @@ const Mobile = (): JSX.Element => {
     { name: 'Networks', url: networks },
     { name: 'Images', url: images },
     { name: 'Container Metrics', url: containerMetrics },
+    { name: 'Snapshots', url: snapshots },
     { name: 'Cluster Metrics', url: k8sMetrics },
     { name: 'Process Logs', url: logs },
   ];
@@ -23,7 +26,8 @@ const Mobile = (): JSX.Element => {
     'Easily create or remove user-defined networks and attach or detach containers to them.',
     'View, run, or remove images with ease.',
     'Observe metrics related to containers as well as your CPU.',
-    'Hit the toggle button to view Kubernetes cluster metrics for nodes and kubelets.',
+    'View and compare previously captured container metrics.',
+    'View Kubernetes cluster metrics for nodes and kubelets.',
     'Access process logs right in Docketeer or save them for later.',
   ];
 
@@ -53,12 +57,14 @@ const Mobile = (): JSX.Element => {
       <div className={styles.gifMobileButtonsBox}>
         <div
           className={styles.gifMobileButtons}
-          onClick={() => handleClick('')}>
+          onClick={() => handleClick('')}
+        >
           &larr;
         </div>
         <div
           className={styles.gifMobileButtons}
-          onClick={() => handleClick('right')}>
+          onClick={() => handleClick('right')}
+        >
           &rarr;
         </div>
       </div>
