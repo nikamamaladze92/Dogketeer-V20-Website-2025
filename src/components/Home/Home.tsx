@@ -48,7 +48,7 @@ const Home = (): JSX.Element => {
           <h1 className={styles.mainTitle}>Introducing Docketeer XVI</h1>
           <p>
             Docketeer is a user-friendly application with an intuitive interface
-            for container management, with visualization tools for your
+            for container management with visualization tools for your
             containers and Kubernetes clusters. The Docker Desktop Extension has
             container and Kubernetes metrics dashboards for health monitoring,
             an intuitive process logs page to search through your container
