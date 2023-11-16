@@ -20,7 +20,7 @@ const Home = (): JSX.Element => {
           setIsIntersecting(false);
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.5 }
     );
 
     const currentRef = homeRef.current;
@@ -41,7 +41,8 @@ const Home = (): JSX.Element => {
       className={
         isLoaded && isIntersecting ? styles.homeLoaded : styles.homeDisplay
       }
-      ref={homeRef}>
+      ref={homeRef}
+    >
       <div className={styles.left}>
         <div className={styles.description}>
           <h1 className={styles.mainTitle}>Introducing Docketeer XVI</h1>
@@ -53,25 +54,25 @@ const Home = (): JSX.Element => {
             an intuitive process logs page to search through your container
             logs, pagination on the containers home page, and an alpha release
             of the configurations tab where you can configure endpoints for
-            Prometheus to scrape your Kubernetes clusters. The latest update
-            elaborated on the Docker Desktop Extension release of Docketeer,
-            bringing the capability to capture snapshots of your container
-            metrics to compare previously saved health metrics.
+            Prometheus to scrape your Kubernetes clusters. The latest release of
+            Docketeer brings the capability to capture snapshots of your
+            container metrics to compare previously saved health metrics.
           </p>
         </div>
         <div className={styles.explore}>
           <Link
-            to='features'
+            to="features"
             smooth={true}
             hashSpy={true}
             spy={true}
-            duration={600}>
+            duration={600}
+          >
             Start Exploring
           </Link>
         </div>
       </div>
       <div className={styles.right}>
-        <img width='300px' height='auto' src={docker} alt='docketeer_img' />
+        <img width="300px" height="auto" src={docker} alt="docketeer_img" />
       </div>
     </div>
   );

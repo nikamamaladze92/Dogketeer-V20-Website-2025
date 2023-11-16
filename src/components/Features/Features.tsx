@@ -84,7 +84,7 @@ const Features = (): JSX.Element => {
         <a
           className={styles.article}
           // update href to current medium article
-          href="https://medium.com/@christiandoescoding/navigating-the-seas-of-docker-with-docketeer-v15-0-ad5bd9540d14"
+          href="https://medium.com/@docketeerxii/introducing-docketeer-xvi-the-journey-continues-f34fc5bf7749"
           target="_blank"
           rel="noopener noreferrer"
         >
