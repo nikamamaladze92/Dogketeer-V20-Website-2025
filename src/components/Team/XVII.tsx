@@ -3,7 +3,7 @@ import githubLogo from '../../assets/github-mark/github-mark-white.png';
 import styles from './Team.module.scss';
 import { animated } from 'react-spring';
 
-export interface xiiProps {
+export interface xviiProps {
   img: string;
   name: string;
   linkedin: string;

@@ -1,4 +1,4 @@
-import Chelsea from '../../assets/XVII/Chelsea.jpeg';
+import Chelsea from '../../assets/XVII/Chelsea.jpg';
 import Gio from '../../assets/XVII/Gio.jpg';
 import Jade from '../../assets/XVII/Jade.jpg';
 import Jessica from '../../assets/XVII/Jessica.jpg';
