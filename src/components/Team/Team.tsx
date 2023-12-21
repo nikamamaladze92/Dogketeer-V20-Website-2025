@@ -1,5 +1,5 @@
 import React from 'react';
-import XII from './XII';
+import XVII from './XVII';
 import AllOthers from './AllOthers';
 import people from './others';
 import styles from './Team.module.scss';
@@ -10,16 +10,16 @@ import { useInView } from 'react-intersection-observer';
 import { useSprings, config } from 'react-spring';
 
 const Team = (): JSX.Element => {
-  const [refXIII, inViewXIII] = useInView({ threshold: 0.2 });
+  const [refXVII, inViewXVII] = useInView({ threshold: 0.2 });
   const [ref, inView] = useInView({ threshold: 0.2 });
 
   const animationsTwo = useSprings(
     8,
     [0, 150, 300, 450, 600].map((delay) => ({
-      opacity: inViewXIII ? 1 : 0,
-      transform: inViewXIII ? 'translateY(0)' : 'translateY(50px)',
+      opacity: inViewXVII ? 1 : 0,
+      transform: inViewXVII ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
-      delay: inViewXIII ? delay : 0,
+      delay: inViewXVII ? delay : 0,
     }))
   );
 
@@ -35,10 +35,10 @@ const Team = (): JSX.Element => {
 
   return (
     <div className={styles.teamContainer}>
-      <h2>The Team Behind Docketeer XVI</h2>
-      <div className={styles.docketeerXIIIContainer} ref={refXIII}>
+      <h2>The Team Behind Docketeer XVII</h2>
+      <div className={styles.docketeerXVIIContainer} ref={refXVII}>
         {currDocketeerTeam.map((person, index) => (
-          <XII
+          <XVII
             key={index}
             img={person.img}
             name={person.name}
@@ -48,10 +48,10 @@ const Team = (): JSX.Element => {
           />
         ))}
       </div>
-      <h2>The Team Behind Docketeer XV</h2>
+      <h2>The Team Behind Docketeer XVI</h2>
       <div className={styles.osp4Container} ref={ref}>
         {prevOSP.map((person, index) => (
-          <XII
+          <XVII
             key={index}
             img={person.img}
             name={person.name}
