@@ -32,7 +32,7 @@ const currDocketeerTeam = [
   {
     img: Robin,
     name: 'Robin Zhang',
-    linkedin: 'www.linkedin.com/in/yuchen-robin-zhang',
+    linkedin: 'https://www.linkedin.com/in/yuchen-robin-zhang',
     github: 'https://github.com/yuchen-z',
   },
 ];

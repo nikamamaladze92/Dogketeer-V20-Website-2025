@@ -13,7 +13,7 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
   const descriptions = [
     'Start, stop, or remove your containers at the click of a button.',
     'Easily create or remove user-defined networks and attach or detach containers to them.',
-    'View, run, or remove images with ease.',
+    'See image vulnerabilities and run or remove images with ease.',
     'Observe and save metrics related to containers as well as your CPU.',
     'View and compare previously captured container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',

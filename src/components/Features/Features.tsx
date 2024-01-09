@@ -43,7 +43,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Image Management',
       img: images,
-      info: 'Easily view, run, and remove Docker images',
+      info: 'Easily view, run, and remove Docker images and see vulnerabilities for each image',
     },
     {
       header: 'Container Metrics',
@@ -84,7 +84,7 @@ const Features = (): JSX.Element => {
         <a
           className={styles.article}
           // update href to current medium article
-          href="https://medium.com/@docketeerxii/introducing-docketeer-xvi-the-journey-continues-f34fc5bf7749"
+          href="https://medium.com/@docketeerxii/docketeer-xvii-transforming-with-security-45cd06da061d"
           target="_blank"
           rel="noopener noreferrer"
         >
