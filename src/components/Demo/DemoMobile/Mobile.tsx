@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import styles from './Demo.module.scss';
 import containers from '../../../assets/demos/containers-demo.gif';
-import images from '../../../assets/demos/images-demo-new.gif';
+import images from '../../../assets/demos/images-demo.png';
 import containerMetrics from '../../../assets/demos/containermetrics-demo.gif';
 import k8sMetrics from '../../../assets/demos/k8smetrics-demo.gif';
 import logs from '../../../assets/demos/logs-demo.gif';
