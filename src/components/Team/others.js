@@ -1,5 +1,25 @@
 const people = [
   {
+    name: 'Jonathan Gray',
+    linkedin: 'https://www.linkedin.com/in/jonathan-lee-gray',
+    github: 'https://github.com/thejohnny5',
+  },
+  {
+    name: 'Cristian Morales',
+    linkedin: 'https://www.linkedin.com/in/cris-morales',
+    github: 'https://github.com/Cris-Morales',
+  },
+  {
+    name: 'Josh Nelson',
+    linkedin: 'https://www.linkedin.com/in/josh-nelson-7aba19284/',
+    github: 'https://github.com/JoshNelson98',
+  },
+  {
+    name: 'Christian Lyon',
+    linkedin: 'https://www.linkedin.com/in/christiandoescoding',
+    github: 'https://github.com/christianDoesCoding',
+  },
+  {
     name: 'Jacob Melendez',
     linkedin: 'https://www.linkedin.com/in/jacob-melendez/',
     github: 'https://github.com/JacobAMelendez',

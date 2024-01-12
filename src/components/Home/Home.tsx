@@ -45,7 +45,7 @@ const Home = (): JSX.Element => {
     >
       <div className={styles.left}>
         <div className={styles.description}>
-          <h1 className={styles.mainTitle}>Introducing Docketeer XVI</h1>
+          <h1 className={styles.mainTitle}>Introducing Docketeer XVII</h1>
           <p>
             Docketeer is a user-friendly application with an intuitive interface
             for container management with visualization tools for your
@@ -55,8 +55,7 @@ const Home = (): JSX.Element => {
             logs, pagination on the containers home page, and an alpha release
             of the configurations tab where you can configure endpoints for
             Prometheus to scrape your Kubernetes clusters. The latest release of
-            Docketeer brings the capability to capture snapshots of your
-            container metrics to compare previously saved health metrics.
+            Docketeer brings the capability to scan your Docker images for vulnerabilites, prioritizing container security.
           </p>
         </div>
         <div className={styles.explore}>

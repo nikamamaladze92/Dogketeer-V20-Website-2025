@@ -3,7 +3,7 @@ import githubLogo from '../../assets/github-mark/github-mark-white.png';
 import styles from './Team.module.scss';
 import { animated } from 'react-spring';
 
-export interface xiiProps {
+export interface xviiProps {
   img: string;
   name: string;
   linkedin: string;
@@ -11,7 +11,7 @@ export interface xiiProps {
   animation: unknown;
 }
 
-const XII = ({ img, name, linkedin, github, animation }): JSX.Element => {
+const XVII = ({ img, name, linkedin, github, animation }): JSX.Element => {
   return (
     <animated.div className={styles.osp4box} style={animation}>
       <img className={styles.osp4Pic} src={img} />
@@ -35,4 +35,4 @@ const XII = ({ img, name, linkedin, github, animation }): JSX.Element => {
   );
 };
 
-export default XII;
+export default XVII;
