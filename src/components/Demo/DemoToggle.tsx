@@ -12,43 +12,27 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
 }): JSX.Element => {
   const descriptions = [
     'Start, stop, or remove your containers at the click of a button.',
-    'Easily create or remove user-defined networks and attach or detach containers to them.',
-    'See image vulnerabilities and run or remove images with ease.',
-    'Observe and save metrics related to containers as well as your CPU.',
-    'View and compare previously captured container metrics.',
+    'View, run, or remove images with ease.',
+    'Visualize your package vulnerability information with Pie Chart.',
+    'Save Scan, Rescan, Compare your scans with a click of a button.',
+    'Monitor your container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',
-    'Access and search process logs right in Docketeer or save them for later.',
+    'Many more options to monitor your metrics.',
   ];
 
   const handleClick = (gifIndex: number) => {
     setCurrentGif(gifIndex);
   };
 
+  const buttons: string[] = ['Containers', 'Images', 'Data Visualization', 'Time-Series', 'Metrics', 'Cluster Metrics', 'Others'];
+
   return (
     <div className={styles.mainContainer}>
       <p className={styles.action}>Click to see a demo of each feature!</p>
       <div className={styles.toggleContainer}>
-        <div className={styles.toggle} onClick={() => handleClick(0)}>
-          Containers
-        </div>
-        <div className={styles.toggle} onClick={() => handleClick(1)}>
-          Networks
-        </div>
-        <div className={styles.toggle} onClick={() => handleClick(2)}>
-          Images
-        </div>
-        <div className={styles.toggle} onClick={() => handleClick(3)}>
-          Container Metrics
-        </div>
-        <div className={styles.toggle} onClick={() => handleClick(4)}>
-          Snapshots
-        </div>
-        <div className={styles.toggle} onClick={() => handleClick(5)}>
-          Cluster Metrics
-        </div>
-        <div className={styles.toggle} onClick={() => handleClick(6)}>
-          Process Logs
-        </div>
+        {buttons.map((button, index) => (<div className={styles.toggle} onClick={() => handleClick(index)}>
+          {button}
+        </div>))}
       </div>
       <p className={styles.descriptions}>{descriptions[currentGif]}</p>
     </div>

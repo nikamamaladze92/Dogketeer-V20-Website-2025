@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 // import styles from './Demo.module.scss';
-import containers from '../../../assets/demos/containers-demo.gif';
-import images from '../../../assets/demos/images-demo.png';
-import containerMetrics from '../../../assets/demos/containermetrics-demo.gif';
-import k8sMetrics from '../../../assets/demos/k8smetrics-demo.gif';
-import logs from '../../../assets/demos/logs-demo.gif';
-import networks from '../../../assets/demos/networks-demo.gif';
-import snapshots from '../../../assets/demos/snapshots-demo.gif';
+import containers from '../../../assets/demos/containerTab-new.gif';
+import images1 from '../../../assets/demos/imageTab1-new.gif';
+import images2 from '../../../assets/demos/imageTab2-new.gif';
+import images3 from '../../../assets/demos/imageTab3-new.gif';
+import metrics from '../../../assets/demos/metricTab-new.gif';
+import k8 from '../../../assets/demos/k8Tab-new.gif';
+import others from '../../../assets/demos/hamburgerTab-new.gif';
 
 import styles from '../Demo.module.scss';
 
 const Mobile = (): JSX.Element => {
   const gifs = [
     { name: 'Containers', url: containers },
-    { name: 'Networks', url: networks },
-    { name: 'Images', url: images },
-    { name: 'Container Metrics', url: containerMetrics },
-    { name: 'Snapshots', url: snapshots },
-    { name: 'Cluster Metrics', url: k8sMetrics },
-    { name: 'Process Logs', url: logs },
+    { name: 'Images', url: images1 },
+    { name: 'Data Visualization', url: images2 },
+    { name: 'Time-Series', url: images3 },
+    { name: 'Metrics', url: metrics },
+    { name: 'Cluster Metrics', url: k8 },
+    { name: 'Others', url: others },
   ];
 
   const descriptions = [
     'Start, stop, or remove your containers at the click of a button.',
-    'Easily create or remove user-defined networks and attach or detach containers to them.',
     'View, run, or remove images with ease.',
-    'Observe metrics related to containers as well as your CPU.',
-    'View and compare previously captured container metrics.',
+    'Visualize your package vulnerability information with Pie Chart.',
+    'Save Scan, Rescan, Compare your scans with a click of a button.',
+    'Monitor your container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',
-    'Access process logs right in Docketeer or save them for later.',
+    'Many more options to monitor your metrics.',
   ];
 
   const [currGif, setGif] = useState(0);

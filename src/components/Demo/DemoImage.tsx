@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Demo.module.scss';
-import containers from '../../assets/demos/containers-demo.gif';
-import images from '../../assets/demos/images-demo.png';
-import containerMetrics from '../../assets/demos/containermetrics-demo.gif';
-import k8sMetrics from '../../assets/demos/k8smetrics-demo.gif';
-import logs from '../../assets/demos/logs-demo.gif';
-import network from '../../assets/demos/networks-demo.gif';
-import snapshots from '../../assets/demos/snapshots-demo.gif';
+import containers from '../../assets/demos/containerTab-new.gif';
+import images1 from '../../assets/demos/imageTab1-new.gif';
+import images2 from '../../assets/demos/imageTab2-new.gif';
+import images3 from '../../assets/demos/imageTab3-new.gif';
+import metrics from '../../assets/demos/metricTab-new.gif';
+import k8 from '../../assets/demos/k8Tab-new.gif';
+import others from '../../assets/demos/hamburgerTab-new.gif';
 
 interface DemoGifProps {
   currentGif: number;
@@ -15,12 +15,12 @@ interface DemoGifProps {
 const DemoImage: React.FC<DemoGifProps> = ({ currentGif }): JSX.Element => {
   const gifs = [
     containers,
-    network,
-    images,
-    containerMetrics,
-    snapshots,
-    k8sMetrics,
-    logs,
+    images1,
+    images2,
+    images3,
+    metrics,
+    k8,
+    others,
   ];
 
   return (
