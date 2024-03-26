@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar';
 import Home from './Home/Home';
 import Features from './Features/Features';
 import Demo from './Demo/Demo';
+import WhatsNew from './WhatsNew/WhatsNew';
 import GetStarted from './GetStarted/GetStarted';
 import Team from './Team/Team';
 // import Footer from './Footer/Footer';
@@ -22,6 +23,9 @@ const Page = (): JSX.Element => {
         <div>
           <Demo />
         </div>
+      </Element>
+      <Element name="whatsnew">
+        <WhatsNew />
       </Element>
       <Element name="getstarted">
         <GetStarted />

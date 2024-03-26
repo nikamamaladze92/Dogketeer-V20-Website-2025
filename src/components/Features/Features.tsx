@@ -43,7 +43,7 @@ const Features = (): JSX.Element => {
     {
       header: 'Image Management',
       img: images,
-      info: 'Easily view, run, and remove Docker images and see vulnerabilities for each image',
+      info: 'Easily view, run, and remove Docker images and explore vulnerabilities for each image',
     },
     {
       header: 'Container Metrics',

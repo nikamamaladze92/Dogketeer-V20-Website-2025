@@ -11,7 +11,7 @@ export interface xviiProps {
   animation: unknown;
 }
 
-const XVII = ({ img, name, linkedin, github, animation }): JSX.Element => {
+const TeamCard = ({ img, name, linkedin, github, animation }): JSX.Element => {
   return (
     <animated.div className={styles.osp4box} style={animation}>
       <img className={styles.osp4Pic} src={img} />
@@ -35,4 +35,4 @@ const XVII = ({ img, name, linkedin, github, animation }): JSX.Element => {
   );
 };
 
-export default XVII;
+export default TeamCard;

@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState, useEffect, useRef } from 'react';
-import styles from './Home.module.scss';
-import docker from '../../assets/docketeerlogo.png';
-import { Link } from 'react-scroll';
+import React from "react";
+import { useState, useEffect, useRef } from "react";
+import styles from "./Home.module.scss";
+import docker from "../../assets/docketeerlogo.png";
+import { Link } from "react-scroll";
 
 const Home = (): JSX.Element => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -45,29 +45,25 @@ const Home = (): JSX.Element => {
     >
       <div className={styles.left}>
         <div className={styles.description}>
-          <h1 className={styles.mainTitle}>Introducing Docketeer XVII</h1>
+          <h1 className={styles.mainTitle}>Introducing Docketeer XVIII</h1>
           <p>
-            Docketeer is a user-friendly application with an intuitive interface
-            for container management with visualization tools for your
-            containers and Kubernetes clusters. The Docker Desktop Extension has
-            container and Kubernetes metrics dashboards for health monitoring,
-            an intuitive process logs page to search through your container
-            logs, pagination on the containers home page, and an alpha release
-            of the configurations tab where you can configure endpoints for
-            Prometheus to scrape your Kubernetes clusters. The latest release of
-            Docketeer brings the capability to scan your Docker images for vulnerabilites, prioritizing container security.
+            Docketeer is a user-friendly container management application with
+            intuitive interfaces and visualization tools for Docker containers
+            and Kubernetes clusters.
           </p>
-        </div>
-        <div className={styles.explore}>
-          <Link
-            to="features"
-            smooth={true}
-            hashSpy={true}
-            spy={true}
-            duration={600}
-          >
-            Start Exploring
-          </Link>
+          <br />
+          <div className={styles.explore}>
+            <Link
+              to="features"
+              smooth={true}
+              hashSpy={true}
+              spy={true}
+              duration={600}
+            >
+              Start Exploring
+            </Link>
+            <br />
+          </div>
         </div>
       </div>
       <div className={styles.right}>

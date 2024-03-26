@@ -1,5 +1,5 @@
 import React from 'react';
-import XVII from './XVII';
+import TeamCard from './TeamCard';
 import AllOthers from './AllOthers';
 import people from './others';
 import styles from './Team.module.scss';
@@ -38,7 +38,7 @@ const Team = (): JSX.Element => {
       <h2>The Team Behind Docketeer XVII</h2>
       <div className={styles.docketeerXVIIContainer} ref={refXVII}>
         {currDocketeerTeam.map((person, index) => (
-          <XVII
+          <TeamCard
             key={index}
             img={person.img}
             name={person.name}
@@ -51,7 +51,7 @@ const Team = (): JSX.Element => {
       <h2>The Team Behind Docketeer XVI</h2>
       <div className={styles.osp4Container} ref={ref}>
         {prevOSP.map((person, index) => (
-          <XVII
+          <TeamCard
             key={index}
             img={person.img}
             name={person.name}
