@@ -1,5 +1,50 @@
 const people = [
   {
+    name: 'Chelsea Lau',
+    linkedin: 'https://www.linkedin.com/in/chelsea-wklau',
+    github: 'https://github.com/chelsea01688',
+  },
+  {
+    name: 'Giovanni Cortes Morales',
+    linkedin: 'https://www.linkedin.com/in/giovanni-cortes/',
+    github: 'https://github.com/GiovanniCortes19',
+  },
+  {
+    name: 'Jade Chan',
+    linkedin: 'https://www.linkedin.com/in/jade-melissa-chan/',
+    github: 'https://github.com/JadeChan03',
+  },
+  {
+    name: 'Jessica Grant',
+    linkedin: 'https://www.linkedin.com/in/jessicargrant/',
+    github: 'https://github.com/jessicarobyn10',
+  },
+  {
+    name: 'Robin Zhang',
+    linkedin: 'https://www.linkedin.com/in/yuchen-robin-zhang',
+    github: 'https://github.com/yuchen-z',
+  },
+  {
+    name: 'Gabriela Pleitez Gomez',
+    linkedin: 'https://www.linkedin.com/in/gabriela-pleitez-gomez',
+    github: 'https://github.com/gabyspg',
+  },
+  {
+    name: 'Alicia Zhang',
+    linkedin: 'https://www.linkedin.com/in/alicia-zhang-a1aaa2138/',
+    github: 'https://github.com/AliciaZ429',
+  },
+  {
+    name: 'Peter Chung',
+    linkedin: 'https://www.linkedin.com/in/peterminkichung/',
+    github: 'https://github.com/peterchung',
+  },
+  {
+    name: 'Wei Wang',
+    linkedin: 'https://www.linkedin.com/in/wei-cheng-wang-2a92b4120/',
+    github: 'https://github.com/weiwang0305',
+  },
+  {
     name: 'Jonathan Gray',
     linkedin: 'https://www.linkedin.com/in/jonathan-lee-gray',
     github: 'https://github.com/thejohnny5',

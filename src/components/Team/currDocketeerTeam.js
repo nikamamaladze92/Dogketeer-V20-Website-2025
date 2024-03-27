@@ -1,39 +1,32 @@
-import Chelsea from '../../assets/XVII/Chelsea.jpg';
-import Gio from '../../assets/XVII/Gio.jpg';
-import Jade from '../../assets/XVII/Jade.jpg';
-import Jessica from '../../assets/XVII/Jessica.jpg';
-import Robin from '../../assets/XVII/Robin.jpg';
+import Alex from '../../assets/XVIII/Alex.jpg';
+import Andy from '../../assets/XVIII/Andy.jpg';
+import Nick from '../../assets/XVIII/Nick.jpg';
+import Quan from '../../assets/XVIII/Quan.jpg';
 
 const currDocketeerTeam = [
   {
-    img: Chelsea,
-    name: 'Chelsea Lau',
-    linkedin: 'https://www.linkedin.com/in/chelsea-wklau',
-    github: 'https://github.com/chelsea01688',
+    img: Alex,
+    name: 'Alexander David',
+    linkedin: 'https://www.linkedin.com/in/alexander-joseph-david/',
+    github: 'https://github.com/alexjosephdavid',
   },
   {
-    img: Gio,
-    name: 'Giovanni Cortes Morales',
-    linkedin: 'https://www.linkedin.com/in/giovanni-cortes/',
-    github: 'https://github.com/GiovanniCortes19',
+    img: Nick,
+    name: 'Nick Kravchuk',
+    linkedin: 'https://www.linkedin.com/in/nickkravchuk/',
+    github: 'https://github.com/kravchuknick',
   },
   {
-    img: Jade,
-    name: 'Jade Chan',
-    linkedin: 'https://www.linkedin.com/in/jade-melissa-chan/',
-    github: 'https://github.com/JadeChan03',
+    img: Quan,
+    name: 'Jean-Quan Van Damme',
+    linkedin: 'https://www.linkedin.com/in/quan-nguyen27/',
+    github: 'https://github.com/ZinWR',
   },
   {
-    img: Jessica,
-    name: 'Jessica Grant',
-    linkedin: 'https://www.linkedin.com/in/jessicargrant/',
-    github: 'https://github.com/jessicarobyn10',
-  },
-  {
-    img: Robin,
-    name: 'Robin Zhang',
-    linkedin: 'https://www.linkedin.com/in/yuchen-robin-zhang',
-    github: 'https://github.com/yuchen-z',
+    img: Andy,
+    name: 'Andy White',
+    linkedin: 'https://www.linkedin.com/in/andywhite5/',
+    github: 'https://github.com/ComfyClicks',
   },
 ];
 

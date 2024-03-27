@@ -3,7 +3,6 @@ import TeamCard from './TeamCard';
 import AllOthers from './AllOthers';
 import people from './others';
 import styles from './Team.module.scss';
-import prevOSP from './prevOSP';
 import currDocketeerTeam from './currDocketeerTeam';
 
 import { useInView } from 'react-intersection-observer';
@@ -35,7 +34,7 @@ const Team = (): JSX.Element => {
 
   return (
     <div className={styles.teamContainer}>
-      <h2>The Team Behind Docketeer XVII</h2>
+      <h2>Meet The Docketeer Team!</h2>
       <div className={styles.docketeerXVIIContainer} ref={refXVII}>
         {currDocketeerTeam.map((person, index) => (
           <TeamCard
@@ -48,20 +47,6 @@ const Team = (): JSX.Element => {
           />
         ))}
       </div>
-      <h2>The Team Behind Docketeer XVI</h2>
-      <div className={styles.osp4Container} ref={ref}>
-        {prevOSP.map((person, index) => (
-          <TeamCard
-            key={index}
-            img={person.img}
-            name={person.name}
-            linkedin={person.linkedin}
-            github={person.github}
-            animation={animations[index]}
-          />
-        ))}
-      </div>
-      <h3>Meet All of Our Engineers!</h3>
       <div className={styles.othersContainer}>
         {people.map((person, index) => (
           <AllOthers

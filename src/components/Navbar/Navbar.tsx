@@ -6,26 +6,6 @@ import docker2 from '../../assets/docketeerlogo2.png';
 
 const Navbar = (): JSX.Element => {
 
-  useEffect(() => {
-    const navbar = document.querySelector('.navbar');
-    const blurOverlay = document.querySelector('.blur-overlay');
-
-    const handleScroll = () => {
-      const rect = navbar.getBoundingClientRect();
-      if (rect.bottom <= 0) {
-        blurOverlay.classList.add('active');
-      } else {
-        blurOverlay.classList.remove('active');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   const displayNav = function () {
     const links = document.querySelectorAll('li');
     for (let i = 0; i < links.length; i++) {
@@ -49,7 +29,6 @@ const Navbar = (): JSX.Element => {
             alt='none'
           />
         </div>
-        <div className="blur-overlay"></div>
         <ul>
           <div onClick={() => displayNav()}>
             <svg
@@ -93,16 +72,6 @@ const Navbar = (): JSX.Element => {
               spy={true}
               duration={600}>
               Demo
-            </Link>
-          </li>
-          <li className={styles.link}>
-            <Link
-              to='whatsnew'
-              spy={true}
-              hashSpy={true}
-              smooth={true}
-              duration={600}>
-              What's New
             </Link>
           </li>
           <li className={styles.link}>

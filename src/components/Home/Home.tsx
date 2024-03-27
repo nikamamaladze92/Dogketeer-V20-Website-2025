@@ -1,8 +1,8 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
-import styles from "./Home.module.scss";
-import docker from "../../assets/docketeerlogo.png";
-import { Link } from "react-scroll";
+import React from 'react';
+import { useState, useEffect, useRef } from 'react';
+import styles from './Home.module.scss';
+import docker from '../../assets/docketeerlogo.png';
+import { Link } from 'react-scroll';
 
 const Home = (): JSX.Element => {
   const [isLoaded, setIsLoaded] = useState(false);
