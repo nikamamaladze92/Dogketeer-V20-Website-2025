@@ -10,7 +10,6 @@ import { useSprings, config } from 'react-spring';
 
 const Team = (): JSX.Element => {
   const [refXVII, inViewXVII] = useInView({ threshold: 0.2 });
-  const [ref, inView] = useInView({ threshold: 0.2 });
 
   const animationsTwo = useSprings(
     8,
@@ -19,16 +18,6 @@ const Team = (): JSX.Element => {
       transform: inViewXVII ? 'translateY(0)' : 'translateY(50px)',
       config: config.slow,
       delay: inViewXVII ? delay : 0,
-    }))
-  );
-
-  const animations = useSprings(
-    8,
-    [0, 150, 300, 450].map((delay) => ({
-      opacity: inView ? 1 : 0,
-      transform: inView ? 'translateY(0)' : 'translateY(50px)',
-      config: config.slow,
-      delay: inView ? delay : 0,
     }))
   );
 

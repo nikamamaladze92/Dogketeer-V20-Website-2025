@@ -67,7 +67,7 @@ const Home = (): JSX.Element => {
         </div>
       </div>
       <div className={styles.right}>
-        <img width="300px" height="auto" src={docker} alt="docketeer_img" />
+        <img width="350px" height="auto" src={docker} alt="docketeer_img" />
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ const Mobile = (): JSX.Element => {
   const descriptions = [
     'Start, stop, or remove your containers at the click of a button.',
     'View, run, or remove images with ease.',
-    'Visualize your package vulnerability information with Pie Chart.',
+    'Visualize your package vulnerability information.',
     'Save Scan, Rescan, Compare your scans with a click of a button.',
     'Monitor your container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',

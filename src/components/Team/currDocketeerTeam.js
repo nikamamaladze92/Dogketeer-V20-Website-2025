@@ -18,7 +18,7 @@ const currDocketeerTeam = [
   },
   {
     img: Quan,
-    name: 'Jean-Quan Van Damme',
+    name: 'Quan Nguyen',
     linkedin: 'https://www.linkedin.com/in/quan-nguyen27/',
     github: 'https://github.com/ZinWR',
   },
