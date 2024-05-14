@@ -7,6 +7,8 @@ import images3 from '../../../assets/demos/imageTab3-new.gif';
 import metrics from '../../../assets/demos/metricTab-new.gif';
 import k8 from '../../../assets/demos/k8Tab-new.gif';
 import others from '../../../assets/demos/hamburgerTab-new.gif';
+import configuration from '../../../assets/demos/configuration.gif';
+
 
 import styles from '../Demo.module.scss';
 
@@ -18,6 +20,7 @@ const Mobile = (): JSX.Element => {
     { name: 'Time-Series', url: images3 },
     { name: 'Metrics', url: metrics },
     { name: 'Cluster Metrics', url: k8 },
+    { name: 'Configuration', url: configuration },
     { name: 'Others', url: others },
   ];
 
@@ -28,6 +31,7 @@ const Mobile = (): JSX.Element => {
     'Save Scan, Rescan, Compare your scans with a click of a button.',
     'Monitor your container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',
+    'Dynamically alter Prometheus targets to customize displayed metrics',
     'Many more options to monitor your metrics.',
   ];
 

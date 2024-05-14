@@ -17,6 +17,7 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
     'Save Scan, Rescan, Compare your scans with a click of a button.',
     'Monitor your container metrics.',
     'View Kubernetes cluster metrics for nodes and kubelets.',
+    'Dynamically alter Prometheus targets to customize displayed metrics',
     'Many more options to monitor your metrics.',
   ];
 
@@ -24,15 +25,26 @@ const DemoToggle: React.FC<DemoToggleProps> = ({
     setCurrentGif(gifIndex);
   };
 
-  const buttons: string[] = ['Containers', 'Images', 'Data Visualization', 'Time-Series', 'Metrics', 'Cluster Metrics', 'Others'];
+  const buttons: string[] = [
+    'Containers',
+    'Images',
+    'Data Visualization',
+    'Time-Series',
+    'Metrics',
+    'Cluster Metrics',
+    'Configurations',
+    'Others',
+  ];
 
   return (
     <div className={styles.mainContainer}>
       <p className={styles.action}>Click to see a demo of each feature!</p>
       <div className={styles.toggleContainer}>
-        {buttons.map((button, index) => (<div className={styles.toggle} onClick={() => handleClick(index)}>
-          {button}
-        </div>))}
+        {buttons.map((button, index) => (
+          <div className={styles.toggle} onClick={() => handleClick(index)}>
+            {button}
+          </div>
+        ))}
       </div>
       <p className={styles.descriptions}>{descriptions[currentGif]}</p>
     </div>

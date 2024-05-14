@@ -66,11 +66,12 @@
 
   .docketeerXVIIContainer {
     margin: auto;
-    max-width: 86em;
+    max-width: 70em;
+    gap: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
     text-align: center;
@@ -84,6 +85,7 @@
   }
 
   .osp4box {
+    // margin: 10px;
     padding-bottom: 2vh;
     margin-bottom: 5vh;
     box-shadow: 1px 1px 10px rgba(154, 180, 251, 0.44);
