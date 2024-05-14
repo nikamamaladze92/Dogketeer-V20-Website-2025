@@ -9,11 +9,11 @@ Before you start, double check to see if `the domain is expiring`.
 We renewed the domain on Google Domain Registrar for 1 year (use your stipend).
 
 1. Log in with `Docketeer-website` GitHub account from credentials sheet.
-3. Create your Team Feature Branch (`git checkout -b team18`)
-4. Commit your Changes. (`git commit -m '<commit message>'`)
-5. Push to that Branch. (`git push origin team18`)
-6. Open a Pull Request to master branch. --> Follow common GitFlow Practice!
-7. Check on Vercel:  
+2. Create your Team Feature Branch (`git checkout -b team19`)
+3. Commit your Changes. (`git commit -m '<commit message>'`)
+4. Push to that Branch. (`git push origin team18`)
+5. Open a Pull Request to master branch. --> Follow common GitFlow Practice!
+6. Check on Vercel:  
 ```
 Dashboard > Docketeer-Website team > docketeer-website-2024 project
 ```

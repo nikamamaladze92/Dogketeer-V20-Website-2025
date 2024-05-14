@@ -71,9 +71,9 @@ const Features = (): JSX.Element => {
       info: 'Clear up unused images or networks to ensure optimized performance',
     },
     {
-      header: 'Endpoint Configuration (Alpha)',
+      header: 'Prometheus Configurations',
       img: configurations,
-      info: 'Configure Kubernetes and Docker endpoint specification to scrape for data',
+      info: 'Dynamically configure Prometheus targets to scrape data',
     },
   ];
 
@@ -84,7 +84,7 @@ const Features = (): JSX.Element => {
         <a
           className={styles.article}
           // update href to current medium article
-          href="https://medium.com/@docketeerxii/announcing-docketeer-18-0-a-whale-of-an-improvement-67282fbbbe61"
+          href="https://medium.com/@ellissong/docketeer-xix-new-features-in-uncharted-seas-3baf72099488"
           target="_blank"
           rel="noopener noreferrer"
         >

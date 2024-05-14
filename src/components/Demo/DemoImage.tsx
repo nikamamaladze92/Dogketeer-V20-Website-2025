@@ -7,6 +7,7 @@ import images3 from '../../assets/demos/imageTab3-new.gif';
 import metrics from '../../assets/demos/metricTab-new.gif';
 import k8 from '../../assets/demos/k8Tab-new.gif';
 import others from '../../assets/demos/hamburgerTab-new.gif';
+import configuration from '../../assets/demos/configuration.gif';
 
 interface DemoGifProps {
   currentGif: number;
@@ -20,6 +21,7 @@ const DemoImage: React.FC<DemoGifProps> = ({ currentGif }): JSX.Element => {
     images3,
     metrics,
     k8,
+    configuration,
     others,
   ];
 

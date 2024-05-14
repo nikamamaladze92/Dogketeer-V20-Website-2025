@@ -45,7 +45,7 @@ const Home = (): JSX.Element => {
     >
       <div className={styles.left}>
         <div className={styles.description}>
-          <h1 className={styles.mainTitle}>Introducing Docketeer XVIII</h1>
+          <h1 className={styles.mainTitle}>Introducing Docketeer XIX</h1>
           <p>
             Docketeer is a user-friendly container management application with
             intuitive interfaces and visualization tools for Docker containers
