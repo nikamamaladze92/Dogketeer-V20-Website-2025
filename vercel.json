@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.dogketeer.com"
+        }
+      ],
+      "destination": "https://dogketeer.com/$1",
+      "permanent": true
+    }
+  ]
+}
